@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Navbar from './components/Navbar'
 
   export default function Home() {
@@ -13,6 +14,7 @@ import Navbar from './components/Navbar'
               [ヒーロー画像: 動画制作の様子]
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
+              制作中のサイトです<br />
               確かな技術で<br />
               想いを映像に
             </h1>
@@ -51,7 +53,8 @@ import Navbar from './components/Navbar'
                   <span className="text-sm text-white">[カメラアイコン]</span>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  動画制作サービス
+                  動画制作<br />
+                  サービス
                 </h3>
                 <p className="text-gray-600">
                   企画から撮影、編集まで<br />
@@ -65,7 +68,8 @@ import Navbar from './components/Navbar'
                   <span className="text-sm text-white">[学習アイコン]</span>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  撮影・編集レッスン
+                  撮影・編集<br />
+                  レッスン
                 </h3>
                 <p className="text-gray-600">
                   基礎から応用まで<br />
@@ -79,7 +83,8 @@ import Navbar from './components/Navbar'
                   <span className="text-sm text-white">[編集アイコン]</span>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  動画編集代行サービス
+                  動画編集<br />
+                  代行サービス
                 </h3>
                 <p className="text-gray-600">
                   撮影済み素材を<br />
@@ -273,9 +278,9 @@ import Navbar from './components/Navbar'
               <div>
                 <h4 className="font-semibold mb-4">サービス</h4>
                 <ul className="space-y-2 text-sm text-gray-400">
-                  <li><a href="/services" className="hover:text-white transition">動画制作サービス</a></li>
-                  <li><a href="/services" className="hover:text-white transition">撮影・編集レッスン</a></li>
-                  <li><a href="/services" className="hover:text-white transition">動画編集代行</a></li>
+                  <li><Link href="/services" className="hover:text-white transition">動画制作サービス</Link></li>
+                  <li><Link href="/services" className="hover:text-white transition">撮影・編集レッスン</Link></li>
+                  <li><Link href="/services" className="hover:text-white transition">動画編集代行</Link></li>
                 </ul>
               </div>
 
@@ -283,10 +288,10 @@ import Navbar from './components/Navbar'
               <div>
                 <h4 className="font-semibold mb-4">メニュー</h4>
                 <ul className="space-y-2 text-sm text-gray-400">
-                  <li><a href="/" className="hover:text-white transition">ホーム</a></li>
-                  <li><a href="/about" className="hover:text-white transition">会社概要</a></li>
-                  <li><a href="/blog" className="hover:text-white transition">ブログ</a></li>
-                  <li><a href="/contact" className="hover:text-white transition">お問い合わせ</a></li>
+                  <li><Link href="/" className="hover:text-white transition">ホーム</Link></li>
+                  <li><Link href="/about" className="hover:text-white transition">会社概要</Link></li>
+                  <li><Link href="/blog" className="hover:text-white transition">ブログ</Link></li>
+                  <li><Link href="/contact" className="hover:text-white transition">お問い合わせ</Link></li>
                 </ul>
               </div>
 
