@@ -75,15 +75,19 @@ note風のシンプルなMarkdown記法で、読みやすい記事が書ける�
     title: "ショートドラマ「ふたつの橋」",
     date: "2024年12月15日",
     category: "blog",
-    excerpt: "短篇ドラマを制作しました。 タイトルは「ふたつの橋」 鹿嶋市と潮来市をむすぶ新旧の神宮橋と、鰐川沿いにあります1号堤コスモス園を舞台に、少女と少年のほんの少しの交流を描いたものです。観光PR動画のドラマ版を意識しました。 2分25秒です。 見ていってください。",
-    image: "https://650vs.com/wp-content/uploads/2024/09/Site_Header_202409.png",
-    content: `短篇ドラマを制作しました。 タイトルは「ふたつの橋」 鹿嶋市と潮来市をむすぶ新旧の神宮橋と、鰐川沿いにあります1号堤コスモス園を舞台に、少女と少年のほんの少しの交流を描いたものです。観光PR動画のドラマ版を意識しました。 2分25秒です。 見ていってください。
+    excerpt: "短篇ドラマを制作しました。タイトルは「ふたつの橋」鹿嶋市と潮来市をむすぶ新旧の神宮橋と、鰐川沿いにあります1号堤コスモス園を舞台に、少女と少年のほんの少しの交流を描いたものです。観光PR動画のドラマ版を意識しました。2分25秒です。見ていってください。",
+    image: "https://650vs.com/wp-content/uploads/2024/12/20395c76ecdb8ea5c297852bd444c15f.jpg",
+    content: `<p>短篇ドラマを制作しました。<br>タイトルは「ふたつの橋」<br>鹿嶋市と潮来市をむすぶ新旧の神宮橋と、鰐川沿いにあります1号堤コスモス園を舞台に、少女と少年のほんの少しの交流を描いたものです。観光PR動画のドラマ版を意識しました。<br>2分25秒です。<br>見ていってください。</p>
 
-はじめて縦型動画を制作しました。構図が難しいですね。従来の横長のも簡単だと思ったことはないですが。 人物のバストショットはとても収まりがいいのですが、周囲が映らないので、その場の雰囲気がとらえられません。ブラウン管時代のテレビのショットを思い出します。 むかしのテレビは画面のサイズが9～15インチくらいだったのです。そのテレビを居間で家族みんなで見ていたのです。2、3メートル離れたところから。だからドラマは顔のアップが多かった。縦型動画のように人物のまわりがとらえられなかったのです。 今回は人物とコスモスを画面に入れたかったのでアップを多用しないように意識しました。
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe title="ふたつの橋 #東国水郷観光動画コンテスト" width="1140" height="641" src="https://www.youtube.com/embed/-S7mALNdxyM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></figure>
 
-今回の撮影ではスマートフォンではなく、ミラーレス一眼のカメラを使いました。SIGMA fp というカメラです。レンズのミリ数もいつもと勝手が違いました。撮影後にプレビューしたときに「思ってたんと違う！」ということもありました。 ポスプロはすべてDaVinci Resolve Studio を使いました。CinemaRAW 撮影だったからカラコレはとても助かりました。 今後、縦型動画の制作はもっと増えるでしょう。いい勉強になりました。
+<p>　はじめて縦型動画を制作しました。構図が難しいですね。従来の横長のも簡単だと思ったことはないですが。<br>　人物のバストショットはとても収まりがいいのですが、周囲が映らないので、その場の雰囲気がとらえられません。ブラウン管時代のテレビのショットを思い出します。<br>　むかしのテレビは画面のサイズが9～15インチくらいだったのです。そのテレビを居間で家族みんなで見ていたのです。2、3メートル離れたところから。だからドラマは顔のアップが多かった。縦型動画のように人物のまわりがとらえられなかったのです。<br>　今回は人物とコスモスを画面に入れたかったのでアップを多用しないように意識しました。</p>
 
-ちなみに橋の数え方は「本」が一般的です。「ひとつ」「ふたつ」じゃないですよ。`,
+<p>　今回の撮影ではスマートフォンではなく、ミラーレス一眼のカメラを使いました。SIGMA fp というカメラです。レンズのミリ数もいつもと勝手が違いました。撮影後にプレビューしたときに「思ってたんと違う！」ということもありました。<br>　ポスプロはすべてDaVinci Resolve Studio を使いました。CinemaRAW 撮影だったからカラコレはとても助かりました。<br>　今後、縦型動画の制作はもっと増えるでしょう。いい勉強になりました。</p>
+
+<p>　ちなみに橋の数え方は「本」が一般的です。「ひとつ」「ふたつ」じゃないですよ。</p>`,
     tags: []
   },
   {
@@ -1446,8 +1450,8 @@ export function getCategories(): string[] {
 export function getPreviousPost(currentSlug: string): BlogPost | undefined {
   const sortedPosts = getAllBlogPosts()
   const currentIndex = sortedPosts.findIndex(post => post.slug === currentSlug)
-  if (currentIndex > 0) {
-    return sortedPosts[currentIndex - 1] // より新しい記事
+  if (currentIndex >= 0 && currentIndex < sortedPosts.length - 1) {
+    return sortedPosts[currentIndex + 1] // より古い記事
   }
   return undefined
 }
@@ -1455,8 +1459,8 @@ export function getPreviousPost(currentSlug: string): BlogPost | undefined {
 export function getNextPost(currentSlug: string): BlogPost | undefined {
   const sortedPosts = getAllBlogPosts()
   const currentIndex = sortedPosts.findIndex(post => post.slug === currentSlug)
-  if (currentIndex >= 0 && currentIndex < sortedPosts.length - 1) {
-    return sortedPosts[currentIndex + 1] // より古い記事
+  if (currentIndex > 0) {
+    return sortedPosts[currentIndex - 1] // より新しい記事
   }
   return undefined
 }
