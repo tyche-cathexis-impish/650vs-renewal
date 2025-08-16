@@ -19,8 +19,7 @@ import Navbar from './components/Navbar'
               想いを映像に
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-              茨城県と千葉県の境界に位置する鹿行（ろっこう）地域を拠点に、<br />
-              動画コンテンツを制作しています
+              茨城県と千葉県の境界に位置する鹿行（ろっこう）地域を拠点に動画コンテンツを制作しています
             </p>
             
             <div className="space-x-4">
@@ -323,6 +322,14 @@ import Navbar from './components/Navbar'
 
             {/* 著作権表示 */}
             <div className="border-t border-gray-800 mt-8 pt-8 text-center">
+              <div className="mb-4">
+                <Link href="/privacy-policy" className="text-sm text-gray-400 hover:text-white transition mr-6">
+                  プライバシーポリシー
+                </Link>
+                <Link href="/cancellation-policy" className="text-sm text-gray-400 hover:text-white transition">
+                  キャンセルポリシー
+                </Link>
+              </div>
               <p className="text-sm text-gray-400">
                 © 2022 ロッコービデオサービス All rights reserved.
               </p>

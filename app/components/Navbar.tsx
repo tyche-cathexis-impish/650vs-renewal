@@ -4,9 +4,11 @@
 
   export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
+    
+    const closeMenu = () => setIsOpen(false)
 
     return (
-      <nav className="bg-white shadow-sm border-b border-gray-100">
+      <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* ロゴ */}
@@ -53,24 +55,20 @@
           {/* モバイルメニュー */}
           {isOpen && (
             <div className="md:hidden">
-              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-100">
-                <Link href="/" className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-gray-600">
+              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-100 bg-white">
+                <Link href="/" onClick={closeMenu} className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-gray-600">
                   Home
                 </Link>
-                <Link href="/services" className="block px-3 py-2 text-base font-medium text-gray-600
-  hover:text-gray-900">
+                <Link href="/services" onClick={closeMenu} className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-900">
                   Services
                 </Link>
-                <Link href="/about" className="block px-3 py-2 text-base font-medium text-gray-600
-  hover:text-gray-900">
+                <Link href="/about" onClick={closeMenu} className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-900">
                   About
                 </Link>
-                <Link href="/blog" className="block px-3 py-2 text-base font-medium text-gray-600
-  hover:text-gray-900">
+                <Link href="/blog" onClick={closeMenu} className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-900">
                   Blog
                 </Link>
-                <Link href="/contact" className="block px-3 py-2 text-base font-medium text-gray-600
-  hover:text-gray-900">
+                <Link href="/contact" onClick={closeMenu} className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-900">
                   Contact
                 </Link>
               </div>
