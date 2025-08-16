@@ -139,22 +139,27 @@
   height: 1px;
 }
 
-/* WordPressの2カラムレイアウトを正確に再現 */
+/* WordPressコラムを縦並び（テキスト→画像）に変更 */
 .prose-note .wp-block-columns {
-  display: flex;
-  gap: 2rem;
+  display: block;
   margin: 2.5rem 0;
-  align-items: flex-start;
 }
 
 .prose-note .wp-block-column {
-  flex: 1;
-  margin-bottom: 0;
+  margin-bottom: 1.5rem;
 }
 
-/* 画像カラムの調整 */
+/* テキストカラムのスタイル */
+.prose-note .wp-block-column p,
+.prose-note .wp-block-column ol,
+.prose-note .wp-block-column ul {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+/* 画像カラムを中央揃えで表示 */
 .prose-note .wp-block-column .wp-block-image {
-  margin: 0;
+  margin: 1.5rem 0;
   text-align: center;
 }
 
@@ -163,14 +168,6 @@
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* モバイル対応 */
-@media (max-width: 768px) {
-  .prose-note .wp-block-columns {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
 }
 
 /* YouTube埋め込みをレスポンシブに */
@@ -183,6 +180,15 @@
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #000;
+}
+
+.prose-note .wp-block-embed__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .prose-note .wp-block-embed-youtube iframe {
@@ -193,12 +199,6 @@
   height: 100% !important;
   border: none;
   border-radius: 8px;
-}
-
-.prose-note .wp-block-embed__wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
 }
 
 .prose-note .wp-block-image {

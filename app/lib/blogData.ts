@@ -927,66 +927,426 @@ Shotcut の編集画面は大きく４つに分かれています。 左側が�
     category: "blog",
     excerpt: "1-1. はじめに 無料で使えるソフトはいくつかありますが、私のお勧めは「Shotcut」です。全ての機能が無料で制限なし、幅広い対応コーデックとWindows、MacOS、Linux、Chr…",
     image: "https://650vs.com/wp-content/uploads/2024/09/Site_Header_202409.png",
-    content: `1-1. はじめに 無料で使えるソフトはいくつかありますが、私のお勧めは「Shotcut」です。全ての機能が無料で制限なし、幅広い対応コーデックとWindows、MacOS、Linux、Chr…
+    content: `<h2 class="wp-block-heading">前回までの Shotcut の使い方</h2>
 
-前回までの Shotcut の使い方 2-1. 取り込みと各画面の紹介 インストールが完了し、Shotcut の画面が表示されました。最初に編集素材のデータを取り込みます。ご自身の撮…
+<figure class="wp-block-embed is-type-wp-embed"><div class="wp-block-embed__wrapper">
+			<div class="blog-card">
+				<div class="blog-card-body-outer">
+					<div class="blog-card-body">
+													<h5 class="blog-card-title">
+								<a href="https://650vs.com/blog/shotcuthowto01/">無料の動画編集ソフト Shotcut の使い方 01 | インストールしましょう</a>
+							</h5>
+																			<p class="blog-card-text">
+								1-1. はじめに 無料で使えるソフトはいくつかありますが、私のお勧めは「Shotcut」です。全ての機能が無料で制限なし、幅広い対応コーデックとWindows、MacOS、Linux、Chr…							</p>
+												<div class="blog-card-site-title">
+							<a href="https://650vs.com">
+																	<img decoding="async" loading="lazy" src="https://650vs.com/wp-content/uploads/2024/09/cropped-RVS_SiteIcon_2024-32x32.png" width="16" height="16" alt="" >
+																ロッコー ビデオサービス							</a>
+						</div>
+					</div>
+				</div>
+									<div class="blog-card-image-outer">
+						<a href="https://650vs.com/blog/shotcuthowto01/" class="blog-card-image-frame">
+							<img decoding="async" class="blog-card-image-src" src="https://650vs.com/wp-content/uploads/2024/09/EyeCatch_Shotcut_logo-1024x633.png" alt="">
+						</a>
+					</div>
+							</div>
 
-3-1. テロップを追加する 前回までの Shotcut の使い方 カット編集が終わりました。次はテロップを入れます。ラストの教会のクリップに「終わり」と入れることにします。 …
+			
+</div></figure>
 
-前回までの Shotcut の使い方 4-1. 音データをタイムラインへ 映像の編集はほぼ固まってきたので、音楽を入れてみます。最初から最後までずっと音楽が流れているようにし…
+<figure class="wp-block-embed is-type-wp-embed"><div class="wp-block-embed__wrapper">
+			<div class="blog-card">
+				<div class="blog-card-body-outer">
+					<div class="blog-card-body">
+													<h5 class="blog-card-title">
+								<a href="https://650vs.com/blog/shotcuthowto02/">無料の動画編集ソフト Shotcut の使い方 02 | 基礎編 1 | 取り込みからカット編集まで</a>
+							</h5>
+																			<p class="blog-card-text">
+								前回までの Shotcut の使い方 2-1. 取り込みと各画面の紹介 インストールが完了し、Shotcut の画面が表示されました。最初に編集素材のデータを取り込みます。ご自身の撮…							</p>
+												<div class="blog-card-site-title">
+							<a href="https://650vs.com">
+																	<img decoding="async" loading="lazy" src="https://650vs.com/wp-content/uploads/2024/09/cropped-RVS_SiteIcon_2024-32x32.png" width="16" height="16" alt="" >
+																ロッコー ビデオサービス							</a>
+						</div>
+					</div>
+				</div>
+									<div class="blog-card-image-outer">
+						<a href="https://650vs.com/blog/shotcuthowto02/" class="blog-card-image-frame">
+							<img decoding="async" class="blog-card-image-src" src="https://650vs.com/wp-content/uploads/2024/09/EyeCatch_Shotcut_logo-1024x633.png" alt="">
+						</a>
+					</div>
+							</div>
 
-前回までの Shotcut の使い方 最後の追い込みに入りましょう。エフェクト、トランジション、クリップの差し替えについてです。ここからがクリエイティブと呼ばれる領域だ…
+			
+</div></figure>
 
-前回までの Shotcut の使い方 6-1. 関係ない人に見てもらうことは大事 車のシーンの後ろにまだ使っていないクリップを２つ追加で入れたいと思いました。男女が水辺で向か…
+<figure class="wp-block-embed is-type-wp-embed"><div class="wp-block-embed__wrapper">
+			<div class="blog-card">
+				<div class="blog-card-body-outer">
+					<div class="blog-card-body">
+													<h5 class="blog-card-title">
+								<a href="https://650vs.com/blog/shotcuthowto03/">無料の動画編集ソフト Shotcut の使い方 03 | 基礎編 2 | テロップの追加</a>
+							</h5>
+																			<p class="blog-card-text">
+								3-1. テロップを追加する 前回までの Shotcut の使い方 カット編集が終わりました。次はテロップを入れます。ラストの教会のクリップに「終わり」と入れることにします。 …							</p>
+												<div class="blog-card-site-title">
+							<a href="https://650vs.com">
+																	<img decoding="async" loading="lazy" src="https://650vs.com/wp-content/uploads/2024/09/cropped-RVS_SiteIcon_2024-32x32.png" width="16" height="16" alt="" >
+																ロッコー ビデオサービス							</a>
+						</div>
+					</div>
+				</div>
+									<div class="blog-card-image-outer">
+						<a href="https://650vs.com/blog/shotcuthowto03/" class="blog-card-image-frame">
+							<img decoding="async" class="blog-card-image-src" src="https://650vs.com/wp-content/uploads/2024/09/EyeCatch_Shotcut_logo-1024x633.png" alt="">
+						</a>
+					</div>
+							</div>
 
-追加したクリップのうち、006 だけが他と解像度が異なっているため、上下に黒が出ています。通しで見ると違和感があるので、このクリップを拡大させて、黒い部分が出ないように対処します。 エフェクトの「サイズ・位置・回転」を使って拡大させましょう。
+			
+</div></figure>
 
-タイムラインで 006 をクリック 「フィルタ」タブをクリック 「＋（フィルタの追加）」をクリックして「お気に入り」か「映像」から「サイズ・位置・回転」を選びます。 縮小拡大というパラメーターを変更して、拡大させましょう。１００％が元の大きさ。それよりも大きい数字にすれば拡大、小さくすれば縮小です。
+<figure class="wp-block-embed is-type-wp-embed"><div class="wp-block-embed__wrapper">
+			<div class="blog-card">
+				<div class="blog-card-body-outer">
+					<div class="blog-card-body">
+													<h5 class="blog-card-title">
+								<a href="https://650vs.com/blog/shotcuthowto04/">無料の動画編集ソフト Shotcut の使い方 04 | 基礎編 3 | 音データをタイムラインへ</a>
+							</h5>
+																			<p class="blog-card-text">
+								前回までの Shotcut の使い方 4-1. 音データをタイムラインへ 映像の編集はほぼ固まってきたので、音楽を入れてみます。最初から最後までずっと音楽が流れているようにし…							</p>
+												<div class="blog-card-site-title">
+							<a href="https://650vs.com">
+																	<img decoding="async" loading="lazy" src="https://650vs.com/wp-content/uploads/2024/09/cropped-RVS_SiteIcon_2024-32x32.png" width="16" height="16" alt="" >
+																ロッコー ビデオサービス							</a>
+						</div>
+					</div>
+				</div>
+									<div class="blog-card-image-outer">
+						<a href="https://650vs.com/blog/shotcuthowto04/" class="blog-card-image-frame">
+							<img decoding="async" class="blog-card-image-src" src="https://650vs.com/wp-content/uploads/2024/09/EyeCatch_Shotcut_logo-1024x633.png" alt="">
+						</a>
+					</div>
+							</div>
 
-こういう時は、数値を直接入力して、試しながら調整します。 私は最初、１０５％で試しました。少し黒が残っていました。刻んで数値を入力し続けます。１０８％はどうでしょう？ いい感じです。１０８％拡大に決めました。
+			
+</div></figure>
 
-上下の黒いフチが消えました。 プレビューでも違和感がなくなりました。
+<figure class="wp-block-embed is-type-wp-embed"><div class="wp-block-embed__wrapper">
+			<div class="blog-card">
+				<div class="blog-card-body-outer">
+					<div class="blog-card-body">
+													<h5 class="blog-card-title">
+								<a href="https://650vs.com/blog/shotcuthowto05/">無料の動画編集ソフト Shotcut の使い方 05 | 基礎編 4 | そしてクリエイティブと呼ばれる領域へ</a>
+							</h5>
+																			<p class="blog-card-text">
+								前回までの Shotcut の使い方 最後の追い込みに入りましょう。エフェクト、トランジション、クリップの差し替えについてです。ここからがクリエイティブと呼ばれる領域だ…							</p>
+												<div class="blog-card-site-title">
+							<a href="https://650vs.com">
+																	<img decoding="async" loading="lazy" src="https://650vs.com/wp-content/uploads/2024/09/cropped-RVS_SiteIcon_2024-32x32.png" width="16" height="16" alt="" >
+																ロッコー ビデオサービス							</a>
+						</div>
+					</div>
+				</div>
+									<div class="blog-card-image-outer">
+						<a href="https://650vs.com/blog/shotcuthowto05/" class="blog-card-image-frame">
+							<img decoding="async" class="blog-card-image-src" src="https://650vs.com/wp-content/uploads/2024/09/EyeCatch_Shotcut_logo-1024x633.png" alt="">
+						</a>
+					</div>
+							</div>
 
-007.mov のクリップ、キスをした後が少し長い気がしませんか？ 唇を離すところまで使ってますよね。もっと前でカットしたほうがいいかも。 アウト点を探ってみましょう。 https://youtu.be/JBINThkhmqo （参考用：音楽をのせたところまでの編集動画） 繰り返し見ていると、女性が男性に向かって伸びるアクション（左足を曲げる）と同時にキスをしていることが分かってきます。この瞬間にカットしたほうが、幸せの躍動感が出ていいかなと思いました。やはり短くします。 タイムラインでキーボードの矢印キーを使って再生ヘッドを動かしながら、１コマ単位でアウト点を探します。 良いアウト点は見つかりましたか？ それではクリップを短くします。今まではマウスを右端に持っていき、再生ヘッドまでドラッグしていましたが、今回は別の方法でやってみましょう。
+			
+</div></figure>
 
-再生ヘッドをアウト点にしたい位置に持っていったら、タイムラインの左上の三本線をクリックして「編集」「Ripple Trim Clip Out」を選びます。
+<figure class="wp-block-embed is-type-wp-embed"><div class="wp-block-embed__wrapper">
+			<div class="blog-card">
+				<div class="blog-card-body-outer">
+					<div class="blog-card-body">
+													<h5 class="blog-card-title">
+								<a href="https://650vs.com/blog/shotcuthowto06/">無料の動画編集ソフト Shotcut の使い方 06 | 基礎編 5 | クリップの挿入と音声を分離</a>
+							</h5>
+																			<p class="blog-card-text">
+								前回までの Shotcut の使い方 6-1. 関係ない人に見てもらうことは大事 車のシーンの後ろにまだ使っていないクリップを２つ追加で入れたいと思いました。男女が水辺で向か…							</p>
+												<div class="blog-card-site-title">
+							<a href="https://650vs.com">
+																	<img decoding="async" loading="lazy" src="https://650vs.com/wp-content/uploads/2024/09/cropped-RVS_SiteIcon_2024-32x32.png" width="16" height="16" alt="" >
+																ロッコー ビデオサービス							</a>
+						</div>
+					</div>
+				</div>
+									<div class="blog-card-image-outer">
+						<a href="https://650vs.com/blog/shotcuthowto06/" class="blog-card-image-frame">
+							<img decoding="async" class="blog-card-image-src" src="https://650vs.com/wp-content/uploads/2024/09/EyeCatch_Shotcut_logo-1024x633.png" alt="">
+						</a>
+					</div>
+							</div>
 
-そうすると、再生ヘッドの位置までアウト点が移動し、クリップが短くなりました。 簡単で正確で便利ですね。このやり方を覚えると作業が早そうです。
+			
+</div></figure>
 
-リップル操作はよく使うことになるでしょう。 「Ripple Trim Clip In」を選ぶと、再生ヘッドの位置がイン点になります。 ただし、注意事項があります。 Ripple が使えるのはクリップを短くする時だけです。 試しに、クリップの外側に再生ヘッドを置いて「Ripple Trim Clip In / Out」をしてみましょう。どうなりましたか？ うまくいかないでしょう？ クリップを長くする場合は、マウスでドラッグする方法で操作しましょう。 「元に戻る」でお試しの前に戻してから、次の作業に移ります。
+<h2 class="wp-block-heading">7-1. クリップの拡大と縮小</h2>
 
-キスのところを短くした影響で、2番目のテロップも短くなってしまいました。配置場所を変えてみましょう。 ディゾルブ前、1番目のテロップの直後に置くことにします。 長さも調整しましょう。１番目を短くして2番目を長く。２つを同じくらいの長さにしました。
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
 
-あと少しです。 映像が長くなったので、音楽が足りないですね。「トラックのロック」を解除して長さを調整します。 A1トラックのカギのアイコンをクリックしてください。ロックが解除されます。 音楽クリップ右端をドラッグして、映像トラックに合わせます。
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-01.png" alt="" class="wp-image-1694" style="width:438px;height:auto" /></figure></div></div>
 
-おっと、映像のトラックが後ろにズレてしまいました。 これはタイムラインで「リップル」「すべてのトラックをリップル」が有効になっているからです。
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>追加したクリップのうち、006 だけが他と解像度が異なっているため、上下に黒が出ています。通しで見ると違和感があるので、このクリップを拡大させて、黒い部分が出ないように対処します。<br>エフェクトの「サイズ・位置・回転」を使って拡大させましょう。</p>
+</div>
+</div>
 
-「元に戻す」で音楽クリップを伸ばす作業前に戻り、やり直しです。
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
 
-「リップル」「すべてのトラックをリップル」どちらか一方だけで構いません。アイコンをクリックして無効にしてください。私は「すべてのトラックをリップル」を無効にしました。
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-02.png" alt="" class="wp-image-1698" style="width:438px;height:auto" /></figure></div></div>
 
-もう一度、音楽トラックの右端をドラッグし、映像クリップの終わりに合わせてみます。 今度は映像クリップが後ろにズレませんでした。 あぁ、やっと完成しました！ 最終確認のプレビューをして、違和感があれば調整してください。 納得できたなら、MP4ファイルに書き出す作業に進みます。
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<ol class="wp-block-list">
+<li>タイムラインで 006 をクリック</li>
+<li>「フィルタ」タブをクリック</li>
+<li>「＋（フィルタの追加）」をクリックして「お気に入り」か「映像」から「サイズ・位置・回転」を選びます。<br><br></li>
+</ol>
+</div>
+</div>
 
-名作が誕生しました。 みんなに見てもらいましょう。 気軽に見てもらえるように、編集したものを書き出して、ひとつの動画ファイルを作ります。 今回は、YouTube 用のプリセットを使ってMP4 ファイルを作ります。みんなみ見てもらいやすい動画ファイル形式のひとつです。
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
 
-「表示」メニューから「書き出し」を選択。
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-03.png" alt="" class="wp-image-1699" style="width:438px;height:auto" /></figure></div></div>
 
-画面左側に「プリセット」リストが表示されます。 「YouTube」を選びます。 特に設定を変更することなく、このまま書き出せば、解像度が1920×1080、30フレーム、ステレオ音声のMP4ファイルが作られます。
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>縮小拡大というパラメーターを変更して、拡大させましょう。１００％が元の大きさ。それよりも大きい数字にすれば拡大、小さくすれば縮小です。<br></p>
+</div>
+</div>
 
-念のため「詳細設定」タブで書き出しの設定を確認しましょう。ここで修正ができます。
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
 
-「ファイルの書き出し」をクリックして……
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-04.png" alt="" class="wp-image-1700" style="width:438px;height:auto" /></figure></div></div>
 
-保存したい場所とファイル名を指定し「保存」をクリック。
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>こういう時は、数値を直接入力して、試しながら調整します。<br>私は最初、１０５％で試しました。少し黒が残っていました。刻んで数値を入力し続けます。１０８％はどうでしょう？　いい感じです。１０８％拡大に決めました。</p>
+</div>
+</div>
 
-画面右側に「ジョブ」が現れました。 書き出しが成功すると、左に緑色のチェックがつきます。 保存した場所にファイルはありますか？ ファイルを開いて、再生して問題がないか確認します。 ここまで、お疲れさまでした。 完成した作品をご覧ください。
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
 
-以上が Shotcut の基礎となる使い方でした。 次回は応用編です。 Shotcut での動画編集は、基礎編を覚えれば作品を完成させることができます。 応用編は作業が早くなる Shotcut 独自の機能の紹介です。Shotcut での動画編集が慣れてきてからで十分です。 初心者の方は、応用編へ進むより編集作品の数をこなしましょう。
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-05.png" alt="" class="wp-image-1702" style="width:438px;height:auto" /></figure></div></div>
 
-ロッコービデオサービスでは、オンラインでの動画編集レッスンを行っています。動画編集ソフトの基本的な操作、無意識に働きかける演出のアドバイスなどを教えます。 ひとりひとりのレベルにあった個別指導なので、スキルアップに最適です。録画もできるので、繰り返し練習することも可能です。
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>上下の黒いフチが消えました。<br>プレビューでも違和感がなくなりました。</p>
+</div>
+</div>
 
-あなたの想いを、編集の魔法で輝かせる 動画編集を学びたい！そう思っているあなたは、動画編集の大切さ、面白さを無意識に気づいている人です。編集こそが、あなたの想い…`,
-    tags: []
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
+
+<h2 class="wp-block-heading">7-2. リップルを使う</h2>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-06.png" alt="" class="wp-image-1704" style="width:438px;height:auto" /></figure></div></div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>007.mov のクリップ、キスをした後が少し長い気がしませんか？<br>唇を離すところまで使ってますよね。もっと前でカットしたほうがいいかも。<br>アウト点を探ってみましょう。<br><br><a href="https://youtu.be/JBINThkhmqo" target="_blank" rel="noreferrer noopener">https://youtu.be/JBINThkhmqo</a><br><em>（参考用：音楽をのせたところまでの編集動画）</em><br><br>繰り返し見ていると、女性が男性に向かって伸びるアクション（左足を曲げる）と同時にキスをしていることが分かってきます。この瞬間にカットしたほうが、幸せの躍動感が出ていいかなと思いました。やはり短くします。<br><br>タイムラインでキーボードの矢印キーを使って再生ヘッドを動かしながら、１コマ単位でアウト点を探します。<br>良いアウト点は見つかりましたか？<br>それではクリップを短くします。今まではマウスを右端に持っていき、再生ヘッドまでドラッグしていましたが、今回は別の方法でやってみましょう。</p>
+</div>
+</div>
+
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-07.png" alt="" class="wp-image-1707" style="width:438px;height:auto" /></figure></div></div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>再生ヘッドをアウト点にしたい位置に持っていったら、タイムラインの左上の三本線をクリックして「編集」「Ripple Trim Clip Out」を選びます。<br></p>
+</div>
+</div>
+
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-08-1.png" alt="" class="wp-image-1709" style="width:438px;height:auto" /></figure></div></div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>そうすると、再生ヘッドの位置までアウト点が移動し、クリップが短くなりました。<br>簡単で正確で便利ですね。このやり方を覚えると作業が早そうです。</p>
+</div>
+</div>
+
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
+
+<p>リップル操作はよく使うことになるでしょう。<br>「Ripple Trim Clip In」を選ぶと、再生ヘッドの位置がイン点になります。<br>ただし、注意事項があります。<br>Ripple が使えるのはクリップを短くする時だけです。<br>試しに、クリップの外側に再生ヘッドを置いて「Ripple Trim Clip In / Out」をしてみましょう。どうなりましたか？<br>うまくいかないでしょう？<br>クリップを長くする場合は、マウスでドラッグする方法で操作しましょう。<br>「元に戻る」でお試しの前に戻してから、次の作業に移ります。</p>
+
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-09.png" alt="" class="wp-image-1712" style="width:438px;height:auto" /></figure></div></div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>キスのところを短くした影響で、2番目のテロップも短くなってしまいました。配置場所を変えてみましょう。<br>ディゾルブ前、1番目のテロップの直後に置くことにします。<br>長さも調整しましょう。１番目を短くして2番目を長く。２つを同じくらいの長さにしました。</p>
+</div>
+</div>
+
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
+
+<p>あと少しです。<br>映像が長くなったので、音楽が足りないですね。「トラックのロック」を解除して長さを調整します。<br>A1トラックのカギのアイコンをクリックしてください。ロックが解除されます。<br>音楽クリップ右端をドラッグして、映像トラックに合わせます。</p>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-10.png" alt="" class="wp-image-1714" style="width:438px;height:auto" /></figure></div></div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>おっと、映像のトラックが後ろにズレてしまいました。<br>これはタイムラインで「リップル」「すべてのトラックをリップル」が有効になっているからです。</p>
+</div>
+</div>
+
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
+
+<p>「元に戻す」で音楽クリップを伸ばす作業前に戻り、やり直しです。</p>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-11.png" alt="" class="wp-image-1716" style="width:438px;height:auto" /></figure></div></div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>「リップル」「すべてのトラックをリップル」どちらか一方だけで構いません。アイコンをクリックして無効にしてください。私は「すべてのトラックをリップル」を無効にしました。</p>
+</div>
+</div>
+
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-12.png" alt="" class="wp-image-1718" style="width:438px;height:auto" /></figure></div></div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>もう一度、音楽トラックの右端をドラッグし、映像クリップの終わりに合わせてみます。<br>今度は映像クリップが後ろにズレませんでした。<br>あぁ、やっと完成しました！<br>最終確認のプレビューをして、違和感があれば調整してください。<br>納得できたなら、MP4ファイルに書き出す作業に進みます。</p>
+</div>
+</div>
+
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
+
+<h2 class="wp-block-heading">7-3. 書き出し</h2>
+
+<p>名作が誕生しました。<br>みんなに見てもらいましょう。<br>気軽に見てもらえるように、編集したものを書き出して、ひとつの動画ファイルを作ります。<br>今回は、YouTube 用のプリセットを使ってMP4 ファイルを作ります。みんなみ見てもらいやすい動画ファイル形式のひとつです。</p>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-13.png" alt="" class="wp-image-1720" style="width:438px;height:auto" /></figure></div></div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>「表示」メニューから「書き出し」を選択。</p>
+</div>
+</div>
+
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-14.png" alt="" class="wp-image-1723" style="width:438px;height:auto" /></figure></div></div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>画面左側に「プリセット」リストが表示されます。<br>「YouTube」を選びます。<br>特に設定を変更することなく、このまま書き出せば、解像度が1920×1080、30フレーム、ステレオ音声のMP4ファイルが作られます。</p>
+</div>
+</div>
+
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-15.png" alt="" class="wp-image-1724" style="width:438px;height:auto" /></figure></div></div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>設定に問題がなければ、ファイル名をつけて保存場所を決めます。<br>「ファイルの書き出し」をクリック。</p>
+</div>
+</div>
+
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-16.png" alt="" class="wp-image-1726" style="width:438px;height:auto" /></figure></div></div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>ファイル名をつけて保存場所を決めて「保存」をクリック。</p>
+</div>
+</div>
+
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-17.png" alt="" class="wp-image-1727" style="width:438px;height:auto" /></figure></div></div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>書き出しが開始されました。<br>書き出し中は、プレビューで進捗が確認できます。</p>
+</div>
+</div>
+
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-18.png" alt="" class="wp-image-1728" style="width:438px;height:auto" /></figure></div></div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>書き出し中は他の作業はできません。<br>しばらく待ちましょう。<br>今回のサンプルは１分ほどの動画ですが、パソコンの性能によっては数分かかります。<br>書き出し中はパソコンにかなり負荷がかかるので、他のアプリを立ち上げないようにしましょう。</p>
+</div>
+</div>
+
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image">
+<figure class="aligncenter size-full is-resized wp-lightbox-container"><img src="https://650vs.com/wp-content/uploads/2024/09/sc07-19.png" alt="" class="wp-image-1730" style="width:438px;height:auto" /></figure></div></div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>画面右側に「ジョブ」が現れました。<br>書き出しが成功すると、左に緑色のチェックがつきます。<br>保存した場所にファイルはありますか？<br>ファイルを開いて、再生して問題がないか確認します。<br><br>ここまで、お疲れさまでした。<br>完成した作品をご覧ください。</p>
+</div>
+</div>
+
+<hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background"/>
+
+<div class="wp-block-vk-blocks-spacer vk_spacer vk_spacer-type-margin-top vk_block-margin-xs--margin-top"><div class="vk_block-margin-md--margin-top"></div></div>
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" title="Shotcut の使い方 | 基礎編 完成版 | 世紀の大傑作 全令和が泣いた！" width="1140" height="641" src="https://www.youtube.com/embed/DalchdjNmI4?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></figure>
+
+<p>以上が Shotcut の基礎となる使い方でした。<br>次回は応用編です。<br>Shotcut での動画編集は、基礎編を覚えれば作品を完成させることができます。<br>応用編は作業が早くなる Shotcut 独自の機能の紹介です。Shotcut での動画編集が慣れてきてからで十分です。<br>初心者の方は、応用編へ進むより編集作品の数をこなしましょう。</p>
+
+<p>　ロッコービデオサービスでは、オンラインでの動画編集レッスンを行っています。動画編集ソフトの基本的な操作、無意識に働きかける演出のアドバイスなどを教えます。<br>　ひとりひとりのレベルにあった個別指導なので、スキルアップに最適です。録画もできるので、繰り返し練習することも可能です。</p>
+
+<figure class="wp-block-embed is-type-wp-embed"><div class="wp-block-embed__wrapper">
+			<div class="blog-card">
+				<div class="blog-card-body-outer">
+					<div class="blog-card-body">
+													<h5 class="blog-card-title">
+								<a href="https://650vs.com/home/lessons/">オンライン動画編集レッスン</a>
+							</h5>
+																			<p class="blog-card-text">
+								あなたの想いを、編集の魔法で輝かせる 動画編集を学びたい！そう思っているあなたは、動画編集の大切さ、面白さを無意識に気づいている人です。編集こそが、あなたの想い…							</p>
+												<div class="blog-card-site-title">
+							<a href="https://650vs.com">
+																	<img decoding="async" loading="lazy" src="https://650vs.com/wp-content/uploads/2024/09/cropped-RVS_SiteIcon_2024-32x32.png" width="16" height="16" alt="" >
+																ロッコー ビデオサービス							</a>
+						</div>
+					</div>
+				</div>
+							</div>
+
+		</div>
+</figure>`,
+    tags: ['Shotcut', '動画編集', '無料ソフト', '拡大縮小', 'リップル', '書き出し']
   },
   {
     slug: "theequalizer",
@@ -1056,8 +1416,26 @@ export function getBlogPost(slug: string): BlogPost | undefined {
   return blogPosts.find(post => post.slug === slug);
 }
 
+// 日本語日付を正しくパースする関数
+function parseJapaneseDate(dateStr: string): Date {
+  // "2025年8月16日" -> "2025-08-16"
+  const match = dateStr.match(/(\d{4})年(\d{1,2})月(\d{1,2})日/)
+  if (match) {
+    const year = match[1]
+    const month = match[2].padStart(2, '0')
+    const day = match[3].padStart(2, '0')
+    return new Date(`${year}-${month}-${day}`)
+  }
+  // フォールバック: そのまま試す
+  return new Date(dateStr)
+}
+
 export function getAllBlogPosts(): BlogPost[] {
-  return blogPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  return blogPosts.sort((a, b) => {
+    const dateA = parseJapaneseDate(a.date)
+    const dateB = parseJapaneseDate(b.date)
+    return dateB.getTime() - dateA.getTime() // 新しい順（降順）
+  });
 }
 
 export function getCategories(): string[] {
@@ -1066,24 +1444,32 @@ export function getCategories(): string[] {
 }
 
 export function getPreviousPost(currentSlug: string): BlogPost | undefined {
-  const currentIndex = blogPosts.findIndex(post => post.slug === currentSlug);
-  return currentIndex > 0 ? blogPosts[currentIndex - 1] : undefined;
+  const sortedPosts = getAllBlogPosts()
+  const currentIndex = sortedPosts.findIndex(post => post.slug === currentSlug)
+  if (currentIndex > 0) {
+    return sortedPosts[currentIndex - 1] // より新しい記事
+  }
+  return undefined
 }
 
 export function getNextPost(currentSlug: string): BlogPost | undefined {
-  const currentIndex = blogPosts.findIndex(post => post.slug === currentSlug);
-  return currentIndex < blogPosts.length - 1 ? blogPosts[currentIndex + 1] : undefined;
+  const sortedPosts = getAllBlogPosts()
+  const currentIndex = sortedPosts.findIndex(post => post.slug === currentSlug)
+  if (currentIndex >= 0 && currentIndex < sortedPosts.length - 1) {
+    return sortedPosts[currentIndex + 1] // より古い記事
+  }
+  return undefined
 }
 
 export function getPopularPosts(limit: number = 5): BlogPost[] {
-  // Return first N posts as popular (could be enhanced with actual popularity metrics)
-  return blogPosts.slice(0, limit);
+  // 人気記事は最新記事から返す（実際の実装では閲覧数やいいね数で判定）
+  return getAllBlogPosts().slice(0, limit);
 }
 
 export function getPostsByCategory(category: string): BlogPost[] {
-  return blogPosts.filter(post => post.category === category);
+  return getAllBlogPosts().filter(post => post.category === category);
 }
 
 export function getPostsByTag(tag: string): BlogPost[] {
-  return blogPosts.filter(post => post.tags.includes(tag));
+  return getAllBlogPosts().filter(post => post.tags.includes(tag));
 }
