@@ -1,0 +1,12 @@
+{
+  "slug": "markdown-test",
+  "title": "Markdownテスト記事",
+  "date": "2025年8月16日",
+  "category": "howto",
+  "excerpt": "note風のMarkdown記法のテスト記事です。見出し、太字、リンクなどの基本的な記法を試します。",
+  "image": "https://650vs.com/wp-content/uploads/2024/09/EyeCatch_Shotcut_logo.png",
+  "content": "",
+  "markdown": "# Markdownテスト記事\n\nこの記事は**note風のMarkdown記法**をテストするための記事です。\n\n## 基本的な記法\n\n### 文字装飾\n\n- **太字**で強調\n- *斜体*で軽い強調\n- `コード`で技術的な内容\n\n### リスト\n\n1. 番号付きリスト\n2. 二番目の項目\n3. 三番目の項目\n\n箇条書きリスト：\n- 項目1\n- 項目2\n- 項目3\n\n### リンク\n\n[Shotcutの使い方01](/blog/shotcuthowto01) ← 内部リンク\n\n[外部サイト](https://example.com) ← 外部リンク\n\n### 画像\n\n![テスト画像](https://650vs.com/wp-content/uploads/2024/09/EyeCatch_Shotcut_logo.png)\n\n### コードブロック\n\n```\nfunction example() {\n  console.log(\"Hello, Markdown!\");\n}\n```\n\n## まとめ\n\nnote風のシンプルなMarkdown記法で、読みやすい記事が書けるようになりました。",
+  "contentType": "markdown",
+  "tags": ["Markdown", "テスト", "note風"]
+}

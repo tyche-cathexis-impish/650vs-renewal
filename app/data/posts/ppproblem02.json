@@ -1,0 +1,10 @@
+{
+  "slug": "ppproblem02",
+  "title": "Adobe PrePro CC(23.4) の A low-level exception occurred in: lvcod64.dll (GetAVICodecs) はバグだった。",
+  "date": "2023年7月9日",
+  "category": "blog",
+  "excerpt": "このバグの対処方法が分かり、解決しました。以下の記事もご覧ください。",
+  "image": "https://650vs.com/wp-content/uploads/2024/09/Site_Header_202409.png",
+  "content": "このバグの対処方法が分かり、解決しました。以下の記事もご覧ください。\n\n悩まされていたこの問題、lvcod64.dll を削除することで解決しました。Premiere Pro のもっさり動作が解消し、Webcam も今のところちゃんと動いてます。 メッセージの内容…\n\n前回、Adobe Premiere Pro を立ち上げると「A low-level exception occurred in: lvcod64.dll (GetAVICodecs)」のメッセージが表示されてアプリの動作がとっても重くなって使い物にならない、という現象が起きていることについて書きました。 どうもプレミアプロのバグのようです。Adobe Support Community にアドビのスタッフ Kevin-Monahan さんがこの現象について投稿されています。2023年6月15日の日付です。\n\nThe bug was fixed in CC 2019, but has returned in CC2023 (23.4). CC2019 で起きたこのバグはすでに解決済みだったけど、CC2023(23.4) で再発している。\n\nさらに、2023年6月22日に、Kevin-Monahan さんが以下の投稿をしています。\n\nCan you update your Logitec webcam software? That may hold the key to a solution. Please let me know after you test this out. ロジテック（日本ではロジクール）のウェブカムのアプリを最新版にアップデートしてもらえませんか？ それで解決できるかもしれません。試された方、結果を教えてください。\n\n私の場合、ウェブカムのアプリをアップデートしてみましたが、解決できず。アドビがなんとかしてくれるのを待つことにします。 オンライン動画編集レッスンを受けた方で、私と同じ現象が起きている方がいらっしゃいました。その方もロジクールのカメラを使っていました。カメラのアップデートを試しても解決されなかったそうです。 恐らくプレミアプロをダウングレードすれば解決するような気がしますが、現バージョンでやりかけのプロジェクトがあるので試してません。 早く修正されて再び快適に使える日が来ますように。願いよ届け。七夕まであと363日あるけど。",
+  "tags": []
+}
