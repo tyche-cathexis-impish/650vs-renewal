@@ -17,8 +17,7 @@ export default function BlogPagination({ posts, postsPerPage = 10 }: BlogPaginat
   const endIndex = startIndex + postsPerPage
   const currentPosts = posts.slice(startIndex, endIndex)
   
-  const featuredPost = currentPage === 1 ? posts[0] : null
-  const displayPosts = currentPage === 1 ? currentPosts.slice(1) : currentPosts
+  const displayPosts = currentPosts
 
   const goToPage = (page: number) => {
     setCurrentPage(page)
@@ -62,58 +61,8 @@ export default function BlogPagination({ posts, postsPerPage = 10 }: BlogPaginat
 
   return (
     <div>
-      {/* Featured Post - Only on first page */}
-      {featuredPost && (
-        <section className="py-16">
-          <div className="container mx-auto px-6">
-            <div className="max-w-6xl mx-auto">
-              <div className="mb-12">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">注目の記事</h2>
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-                <div className="bg-gray-200 h-80 rounded-lg flex items-center justify-center overflow-hidden">
-                  {featuredPost.image ? (
-                    <img 
-                      src={featuredPost.image} 
-                      alt={featuredPost.title}
-                      className="w-full h-full object-cover"
-                    />
-                  ) : (
-                    <span className="text-gray-500 text-lg">[記事画像]</span>
-                  )}
-                </div>
-                <div>
-                  <div className="flex items-center text-sm text-gray-500 mb-3">
-                    <span className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full mr-3">
-                      {featuredPost.category}
-                    </span>
-                    <span>{featuredPost.date}</span>
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    {featuredPost.title}
-                  </h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
-                    {featuredPost.excerpt}
-                  </p>
-                  <Link 
-                    href={`/blog/${featuredPost.slug}`}
-                    className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold"
-                  >
-                    記事を読む
-                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* Blog Posts Grid */}
-      <section className={`py-16 ${currentPage === 1 ? 'bg-gray-50' : ''}`}>
+      <section className="py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="mb-12">
