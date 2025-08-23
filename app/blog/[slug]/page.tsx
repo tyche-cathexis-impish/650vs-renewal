@@ -1,9 +1,7 @@
 import Link from 'next/link'
 import Navbar from '../../components/Navbar'
-import BlogImageHandler from '../../components/BlogImageHandler'
 import { notFound } from 'next/navigation'
-import { getBlogPost, getAllBlogPosts, getPreviousPost, getNextPost, getPopularPosts } from '../../lib/blogData'
-import { markdownToHtml, parseNoteStyleMarkdown } from '../../lib/markdown'
+import { getPostById, getAllPosts, convertToLegacyFormat } from '../../lib/microcms'
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -13,34 +11,29 @@ interface BlogPostPageProps {
 
 export default async function BlogPost({ params }: BlogPostPageProps) {
   const { slug } = await params
-  const post = getBlogPost(slug)
+  const microCMSPost = await getPostById(slug)
   
-  if (!post) {
+  if (!microCMSPost) {
     notFound()
   }
 
-  const previousPost = getPreviousPost(slug)
-  const nextPost = getNextPost(slug)
-  const popularPosts = getPopularPosts(5)
+  const post = convertToLegacyFormat(microCMSPost)
+  
+  // Get all posts for navigation
+  const allMicroCMSPosts = await getAllPosts()
+  const allPosts = allMicroCMSPosts.map(convertToLegacyFormat)
+  
+  // Find current post index for navigation
+  const currentIndex = allPosts.findIndex(p => p.slug === slug)
+  const previousPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null
+  const nextPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null
+  const popularPosts = allPosts.slice(0, 3) // Use first 3 posts as popular for now
 
-  // Markdownコンテンツを処理
-  let processedContent = post.content
-  try {
-    if (post.contentType === 'markdown' && post.markdown) {
-      processedContent = await markdownToHtml(post.markdown)
-    } else if (post.markdown) {
-      // note風のシンプルなMarkdown処理
-      processedContent = parseNoteStyleMarkdown(post.markdown)
-    }
-  } catch (error) {
-    console.error('Markdown processing error:', error)
-    // フォールバックとして元のcontentを使用
-    processedContent = post.content
-  }
+  // Markdownコンテンツを処理（一時的に無効化）
+  const processedContent = post.content
 
   return (
-    <BlogImageHandler>
-      <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white">
       <Navbar />
       
       {/* Note-style Header */}
@@ -82,13 +75,13 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
       {/* Previous/Next Navigation */}
       <section className="py-8 border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="grid grid-cols-3 gap-8 items-start">
-            <div className="text-left">
+          <div className="flex justify-center items-start">
+            <div className="w-1/3 text-left pr-4">
               {/* Previous Post */}
               {previousPost ? (
                 <Link href={`/blog/${previousPost.slug}`} className="text-gray-500 hover:text-gray-700 text-sm block">
                   <div className="font-medium">前の記事</div>
-                  <div className="mt-1 line-clamp-2">{previousPost.title}</div>
+                  <div className="mt-1 break-words" style={{wordBreak: 'break-all', overflowWrap: 'break-word', maxWidth: '36ch'}}>{previousPost.title}</div>
                 </Link>
               ) : (
                 <span className="text-gray-300 text-sm block">
@@ -97,19 +90,19 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
                 </span>
               )}
             </div>
-            <div className="text-center">
+            <div className="w-1/3 text-center">
               {/* Blog List Link */}
               <Link href="/blog" className="text-blue-600 hover:text-blue-700 text-sm font-medium block">
                 <div>ブログ一覧</div>
                 <div className="mt-1">に戻る</div>
               </Link>
             </div>
-            <div className="text-right">
+            <div className="w-1/3 text-left pl-4">
               {/* Next Post */}
               {nextPost ? (
                 <Link href={`/blog/${nextPost.slug}`} className="text-gray-500 hover:text-gray-700 text-sm block">
                   <div className="font-medium">次の記事</div>
-                  <div className="mt-1 line-clamp-2">{nextPost.title}</div>
+                  <div className="mt-1 break-words" style={{wordBreak: 'break-all', overflowWrap: 'break-word', maxWidth: '36ch'}}>{nextPost.title}</div>
                 </Link>
               ) : (
                 <span className="text-gray-300 text-sm block">
@@ -219,14 +212,13 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
         </div>
       </footer>
     </div>
-    </BlogImageHandler>
   )
 }
 
 // 静的生成用のパス生成
 export async function generateStaticParams() {
-  const posts = getAllBlogPosts()
+  const posts = await getAllPosts()
   return posts.map((post) => ({
-    slug: post.slug,
+    slug: post.id,
   }))
 }

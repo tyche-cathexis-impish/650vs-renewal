@@ -15,6 +15,16 @@
   line-height: 1.8;
 }
 
+.prose-note br {
+  display: block;
+  margin-bottom: 0.8em;
+  content: "";
+}
+
+.prose-note p:has(br:first-child) {
+  margin-top: 1.2em;
+}
+
 .prose-note h1, .prose-note h2, .prose-note h3, .prose-note h4, .prose-note h5, .prose-note h6 {
   line-height: 1.4;
   margin-top: 2.5em;
@@ -42,6 +52,14 @@
   margin-bottom: 1.5em;
   line-height: 1.8;
   padding-left: 1.5em;
+}
+
+.prose-note ol {
+  list-style-type: decimal;
+}
+
+.prose-note ul {
+  list-style-type: disc;
 }
 
 .prose-note li {
@@ -324,58 +342,75 @@
   margin: 0;
 }
 
-/* note風コンパクトリンクカード */
-.note-link-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 12px;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  background: #fff;
-  margin: 1.5em 0;
-  text-decoration: none;
-  color: inherit;
-  transition: all 0.2s ease;
+/* note風リンクカード（左：タイトル、右：サムネイル） */
+.prose-note .note-link-card {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 20px !important;
+  padding: 20px !important;
+  border: 1px solid #e1e5e9 !important;
+  border-radius: 6px !important;
+  background: #fff !important;
+  margin: 1.5em auto !important;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: all 0.2s ease !important;
+  width: calc(100% - 100px) !important;
+  max-width: calc(100% - 100px) !important;
+  box-sizing: border-box !important;
+  height: 150px !important;
+  min-height: 150px !important;
+  max-height: 150px !important;
 }
 
-.note-link-card:hover {
-  background: #f8fafc;
-  border-color: #3b82f6;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.prose-note .note-link-card:hover {
+  background: #fafbfc !important;
+  border-color: #d1d5db !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
 }
 
-.note-link-card-image {
-  width: 60px;
-  height: 45px;
-  border-radius: 4px;
-  object-fit: cover;
-  flex-shrink: 0;
-  background: #f3f4f6;
+.prose-note .note-link-card-content {
+  flex: 1 !important;
+  min-width: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  height: 110px !important;
+  overflow: hidden !important;
 }
 
-.note-link-card-content {
-  flex: 1;
-  min-width: 0;
+.prose-note .note-link-card-title {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 1.5 !important;
+  color: #1a1a1a !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
 }
 
-.note-link-card-title {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.4;
-  color: #1f2937;
-  margin: 0 0 4px 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+.prose-note .note-link-card-description {
+  display: none !important;
 }
 
-.note-link-card-domain {
-  font-size: 11px;
-  color: #6b7280;
-  margin: 0;
+.prose-note .note-link-card-image {
+  width: 160px !important;
+  height: 110px !important;
+  border-radius: 4px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  background: #f5f5f5 !important;
+  order: 2 !important;
+}
+
+.prose-note .note-link-card-domain {
+  display: none !important;
 }
 
 /* ユーティリティクラス */

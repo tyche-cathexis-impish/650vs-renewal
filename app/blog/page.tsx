@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import Navbar from '../components/Navbar'
 import BlogPagination from '../components/BlogPagination'
-import { getAllBlogPosts } from '../lib/blogData'
+import { getAllPosts, convertToLegacyFormat } from '../lib/microcms'
 
-export default function Blog() {
-  const posts = getAllBlogPosts()
+export default async function Blog() {
+  const microCMSPosts = await getAllPosts()
+  const posts = microCMSPosts.map(convertToLegacyFormat)
   return (
     <div className="min-h-screen bg-white">
       <Navbar />

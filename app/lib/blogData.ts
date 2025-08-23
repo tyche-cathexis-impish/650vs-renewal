@@ -69,11 +69,14 @@ export function getBlogPost(slug: string): BlogPost | undefined {
     const filePath = path.join(postsDirectory, `${slug}.json`);
     
     if (!fs.existsSync(filePath)) {
+      console.log(`File not found: ${filePath}`);
       return undefined;
     }
 
     const fileContents = fs.readFileSync(filePath, 'utf8');
-    return JSON.parse(fileContents);
+    const post = JSON.parse(fileContents);
+    console.log(`Successfully loaded post: ${slug}`);
+    return post;
   } catch (error) {
     console.error(`Error reading post ${slug}:`, error);
     return undefined;
@@ -98,8 +101,10 @@ export function getPreviousPost(currentSlug: string): BlogPost | undefined {
   const posts = getAllBlogPosts();
   const currentIndex = posts.findIndex(post => post.slug === currentSlug);
   
-  if (currentIndex > 0) {
-    return posts[currentIndex - 1];
+  // postsは新しい順にソートされているので、
+  // 「前の記事」（時系列的に過去）は配列の後方にある
+  if (currentIndex >= 0 && currentIndex < posts.length - 1) {
+    return posts[currentIndex + 1];
   }
   
   return undefined;
@@ -109,8 +114,10 @@ export function getNextPost(currentSlug: string): BlogPost | undefined {
   const posts = getAllBlogPosts();
   const currentIndex = posts.findIndex(post => post.slug === currentSlug);
   
-  if (currentIndex >= 0 && currentIndex < posts.length - 1) {
-    return posts[currentIndex + 1];
+  // postsは新しい順にソートされているので、
+  // 「次の記事」（時系列的に未来）は配列の前方にある
+  if (currentIndex > 0) {
+    return posts[currentIndex - 1];
   }
   
   return undefined;

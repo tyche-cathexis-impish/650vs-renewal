@@ -32,6 +32,7 @@ export default function BlogImageHandler({ children }: BlogImageHandlerProps) {
         // ブログカードやアバター画像などを除外
         const isExcluded = img.closest('.blog-card') || 
                           img.closest('.note-link-card') ||
+                          img.closest('a') || // リンク内の画像は除外
                           img.classList.contains('wp-post-image') ||
                           img.classList.contains('attachment-thumbnail') ||
                           img.width <= 64 || // 小さい画像は除外

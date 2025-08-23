@@ -2,7 +2,9 @@ import { remark } from 'remark'
 import html from 'remark-html'
 
 export async function markdownToHtml(markdown: string) {
-  const result = await remark().use(html).process(markdown)
+  const result = await remark()
+    .use(html, { sanitize: false }) // HTMLタグを許可
+    .process(markdown)
   return result.toString()
 }
 
@@ -48,7 +50,7 @@ export function parseNoteStyleMarkdown(content: string): string {
     .join('\n');
     
   // リストを適切にラップ
-  html = html.replace(/(<li>.*<\/li>)/gs, (match) => {
+  html = html.replace(/(<li>.*<\/li>)/g, (match) => {
     return `<ul>${match}</ul>`;
   });
     
