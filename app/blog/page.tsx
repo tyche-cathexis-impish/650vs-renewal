@@ -17,9 +17,6 @@ export default async function Blog() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Blog
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300">
-              映像制作の技術情報、事例紹介、業界トレンドをお届け
-            </p>
           </div>
         </div>
       </section>

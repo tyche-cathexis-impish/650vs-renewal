@@ -1,7 +1,12 @@
 import Link from 'next/link'
 import Navbar from '../../components/Navbar'
+import BlogImageHandler from '../../components/BlogImageHandler'
 import { notFound } from 'next/navigation'
 import { getPostById, getAllPosts, convertToLegacyFormat } from '../../lib/microcms'
+import { processLinkCards } from '../../lib/linkCardProcessor'
+
+// Force dynamic rendering to avoid static generation issues
+export const dynamic = 'force-dynamic'
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -25,12 +30,15 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
   
   // Find current post index for navigation
   const currentIndex = allPosts.findIndex(p => p.slug === slug)
-  const previousPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null
-  const nextPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null
+  // Since posts are ordered by newest first (-publishedAt), we need to reverse the logic:
+  // - previousPost (過去の記事) = currentIndex + 1 (older post in the array)
+  // - nextPost (未来の記事) = currentIndex - 1 (newer post in the array)
+  const previousPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null
+  const nextPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null
   const popularPosts = allPosts.slice(0, 3) // Use first 3 posts as popular for now
 
-  // Markdownコンテンツを処理（一時的に無効化）
-  const processedContent = post.content
+  // Process content to convert URLs to link cards
+  const processedContent = await processLinkCards(post.content)
 
   return (
     <div className="min-h-screen bg-white">
@@ -65,10 +73,12 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
       <article className="py-8">
         <div className="max-w-2xl mx-auto px-6">
           {/* Article Body */}
-          <div 
-            className="prose prose-note max-w-none"
-            dangerouslySetInnerHTML={{ __html: processedContent }}
-          />
+          <BlogImageHandler>
+            <div 
+              className="prose prose-note max-w-none"
+              dangerouslySetInnerHTML={{ __html: processedContent }}
+            />
+          </BlogImageHandler>
         </div>
       </article>
 
@@ -215,10 +225,10 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
   )
 }
 
-// 静的生成用のパス生成
-export async function generateStaticParams() {
-  const posts = await getAllPosts()
-  return posts.map((post) => ({
-    slug: post.id,
-  }))
-}
+// Temporarily disable static generation to fix Jest worker error
+// export async function generateStaticParams() {
+//   const posts = await getAllPosts()
+//   return posts.map((post) => ({
+//     slug: post.id,
+//   }))
+// }

@@ -9,7 +9,7 @@ interface BlogPaginationProps {
   postsPerPage?: number
 }
 
-export default function BlogPagination({ posts, postsPerPage = 10 }: BlogPaginationProps) {
+export default function BlogPagination({ posts, postsPerPage = 12 }: BlogPaginationProps) {
   const [currentPage, setCurrentPage] = useState(1)
   
   const totalPages = Math.ceil(posts.length / postsPerPage)
@@ -67,14 +67,14 @@ export default function BlogPagination({ posts, postsPerPage = 10 }: BlogPaginat
           <div className="max-w-6xl mx-auto">
             <div className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                {currentPage === 1 ? '最新記事' : `記事一覧 - ページ ${currentPage}`}
+                記事一覧{currentPage > 1 ? ` - ページ ${currentPage}` : ''}
               </h2>
               <p className="text-gray-600">
                 全 {posts.length} 件中 {startIndex + 1} - {Math.min(endIndex, posts.length)} 件を表示
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {displayPosts.map((post) => (
                 <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
                   <article className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-all duration-300 cursor-pointer h-full">

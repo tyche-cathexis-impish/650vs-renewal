@@ -360,9 +360,9 @@
   width: calc(100% - 100px) !important;
   max-width: calc(100% - 100px) !important;
   box-sizing: border-box !important;
-  height: 150px !important;
-  min-height: 150px !important;
-  max-height: 150px !important;
+  height: 180px !important;
+  min-height: 180px !important;
+  max-height: 180px !important;
 }
 
 .prose-note .note-link-card:hover {
@@ -377,7 +377,7 @@
   min-width: 0 !important;
   display: flex !important;
   align-items: center !important;
-  height: 110px !important;
+  height: 140px !important;
   overflow: hidden !important;
 }
 
@@ -400,8 +400,8 @@
 }
 
 .prose-note .note-link-card-image {
-  width: 160px !important;
-  height: 110px !important;
+  width: 200px !important;
+  height: 140px !important;
   border-radius: 4px !important;
   object-fit: cover !important;
   flex-shrink: 0 !important;
@@ -411,6 +411,39 @@
 
 .prose-note .note-link-card-domain {
   display: none !important;
+}
+
+/* Debug: Force link card to display as single element */
+.prose-note .note-link-card * {
+  border: none !important;
+  margin: 0 !important;
+}
+
+.prose-note .note-link-card {
+  overflow: hidden !important;
+}
+
+/* Stronger CSS rules to force correct display */
+.prose-note a.note-link-card {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 20px !important;
+  padding: 20px !important;
+  border: 1px solid #e1e5e9 !important;
+  border-radius: 6px !important;
+  background: #fff !important;
+  margin: 1.5em auto !important;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: all 0.2s ease !important;
+  width: calc(100% - 100px) !important;
+  max-width: calc(100% - 100px) !important;
+  box-sizing: border-box !important;
+  height: 180px !important;
+  min-height: 180px !important;
+  max-height: 180px !important;
 }
 
 /* ユーティリティクラス */

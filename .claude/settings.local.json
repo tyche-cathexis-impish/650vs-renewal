@@ -42,7 +42,15 @@
       "Bash(git push:*)",
       "Bash(git filter-branch:*)",
       "Bash(git reset:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Read(C:\\Users\\tam-r\\OneDrive\\ドキュメント\\MEGA/**)",
+      "Read(C:\\Users\\tam-r\\Downloads/**)",
+      "Read(C:\\Users\\tam-r\\Downloads/**)",
+      "Read(C:\\Users\\tam-r\\Downloads/**)",
+      "Read(C:\\Users\\tam-r\\Downloads/**)",
+      "Read(C:\\Users\\tam-r\\Downloads/**)",
+      "Read(C:\\Users\\tam-r\\Downloads/**)",
+      "Bash(git log:*)"
     ],
     "deny": [],
     "ask": [],

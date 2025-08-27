@@ -34,7 +34,7 @@ export interface BlogPost {
 // Fetch all blog posts
 export async function getAllPosts() {
   try {
-    const url = `https://${process.env.MICROCMS_SERVICE_DOMAIN}/api/v1/blogs`;
+    const url = `https://${process.env.MICROCMS_SERVICE_DOMAIN}/api/v1/blogs?limit=100&orders=-publishedAt`;
     
     const response = await fetch(url, {
       headers: {
