@@ -25,12 +25,7 @@
   margin-top: 1.2em;
 }
 
-.prose-note h1,
-.prose-note h2,
-.prose-note h3,
-.prose-note h4,
-.prose-note h5,
-.prose-note h6 {
+.prose-note h1, .prose-note h2, .prose-note h3, .prose-note h4, .prose-note h5, .prose-note h6 {
   line-height: 1.4;
   margin-top: 2.5em;
   margin-bottom: 1em;
@@ -53,8 +48,7 @@
   font-size: 1.25rem;
 }
 
-.prose-note ul,
-.prose-note ol {
+.prose-note ul, .prose-note ol {
   margin-bottom: 1.5em;
   line-height: 1.8;
   padding-left: 1.5em;
@@ -258,6 +252,7 @@
 .prose-note a[href]:hover {
   border-bottom-color: #3b82f6;
 }
+
 
 /* 既存のブログカードをnote風に変更 */
 .prose-note .blog-card {
@@ -469,8 +464,6 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary-purple: #6a258a;
-  --primary-purple-hover: #6a258a; /* ホバー効果をオフにして様子を見る */
 }
 
 @theme inline {
@@ -490,30 +483,15 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
-    Arial, "Noto Sans JP", Meiryo, sans-serif;
+  font-family: 
+    "Helvetica Neue",
+    "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN",
+    Arial,
+    "Noto Sans JP",
+    Meiryo,
+    sans-serif;
   line-height: 1.6;
   font-feature-settings: "palt" 1;
   letter-spacing: 0.02em;
-}
-
-/* カスタムカラークラス */
-.text-primary-purple {
-  color: var(--primary-purple);
-}
-
-.bg-primary-purple {
-  background-color: var(--primary-purple);
-}
-
-.bg-primary-purple:hover {
-  background-color: var(--primary-purple-hover);
-}
-
-.text-primary-purple:hover {
-  color: var(--primary-purple-hover);
-}
-
-.border-primary-purple {
-  border-color: var(--primary-purple);
 }

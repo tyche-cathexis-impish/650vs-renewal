@@ -1,341 +1,233 @@
-import Link from 'next/link'
-import Navbar from './components/Navbar'
+import Link from "next/link";
+import Navbar from "./components/Navbar";
 
-  export default function Home() {
-    return (
-      <div className="min-h-screen bg-white">
-        <Navbar />
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-white">
+      <Navbar />
 
-        {/* ヒーローセクション */}
-        <section className="relative h-screen flex items-center justify-center bg-gray-900">
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        <div className="relative z-10 text-center text-white px-4">
-            <div className="mb-8 text-sm text-gray-300">
-              [ヒーロー画像: 動画制作の様子]
+      {/* ヒーローセクション */}
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 to-gray-700">
+        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+
+        {/* 背景に映像制作のイメージを想定 */}
+        <div className="absolute inset-0 bg-gray-800 opacity-20"></div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+          {/* 左側：メインコンテンツ */}
+          <div className="text-white">
+            <div className="mb-8">
+              <span className="text-sm text-gray-300 uppercase tracking-widest">
+                Professional Video Services
+              </span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              制作中のサイトです<br />
-              確かな技術で<br />
-              想いを映像に
+
+            <h3 className="text-3xl md:text-4xl font-bold mb-0 leading-tight">
+              映像制作
+            </h3>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+              ロッコー ビデオサービス
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-              茨城県と千葉県の境界に位置する鹿行（ろっこう）地域を拠点に動画コンテンツを制作しています
+
+            <p className="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed">
+              画像１
             </p>
-            
-            <div className="space-x-4">
-              <button className="bg-white text-black px-8 py-3 text-lg font-medium hover:bg-gray-100 transition">
-                制作実績を見る
-              </button>
-              <button className="border border-white text-white px-8 py-3 text-lg font-medium hover:bg-white
-  hover:text-black transition">
-                ご相談・お見積り
-              </button>
-            </div>
-          </div>   
-        </section>
-         {/* サービス紹介セクション */}
-        <section className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                私たちのサービス
-              </h2>
-              <p className="text-lg text-gray-600">
-                お客様のニーズに合わせた3つのサービスをご提供
-              </p>
-            </div>
+          </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* サービス1 */}
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-sm text-white">[カメラアイコン]</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  動画制作<br />
-                  サービス
-                </h3>
-                <p className="text-gray-600">
-                  企画から撮影、編集まで<br />
-                  ワンストップで承ります
-                </p>
-              </div>
-
-              {/* サービス2 */}
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-sm text-white">[学習アイコン]</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  撮影・編集<br />
-                  レッスン
-                </h3>
-                <p className="text-gray-600">
-                  基礎から応用まで<br />
-                  丁寧に指導いたします
-                </p>
-              </div>
-
-              {/* サービス3 */}
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-sm text-white">[編集アイコン]</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  動画編集<br />
-                  代行サービス
-                </h3>
-                <p className="text-gray-600">
-                  撮影済み素材を<br />
-                  プロが仕上げます
-                </p>
-              </div>
+          {/* 右側：画像プレースホルダー */}
+          <div className="relative">
+            <div className="aspect-square bg-gray-200 rounded-2xl flex items-center justify-center text-gray-600 shadow-2xl">
+              <span className="text-lg">画像１</span>
             </div>
           </div>
-        </section>
-         {/* 作品ギャラリーセクション */}
-         <section className="py-16 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                制作実績
-              </h2>
-              <p className="text-lg text-gray-600">
-                これまでに手がけた映像作品をご紹介
-              </p>
+        </div>
+      </section>
+
+      {/* About Usセクション */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            {/* 左側：画像 */}
+            <div className="relative">
+              <div className="aspect-video bg-gray-200 rounded-2xl flex items-center justify-center text-gray-600 shadow-lg">
+                <span className="text-lg">画像２</span>
+              </div>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
-              {/* 作品1 */}
-              <div className="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl
-  transition-shadow">
-                <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500">[作品サムネイル1]</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    企業プロモーション映像
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    地元企業様の魅力を伝える3分間の映像制作
-                  </p>
-                </div>
+            {/* 右側：テキスト */}
+            <div>
+              <div className="mb-6">
+                <span className="text-primary-purple uppercase tracking-widest text-sm font-semibold">
+                  ABOUT US
+                </span>
               </div>
 
-              {/* 作品2 */}
-              <div className="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl
-  transition-shadow">
-                <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500">[作品サムネイル2]</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    イベント記録映像
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    記念すべき瞬間を美しく記録
-                  </p>
-                </div>
+              <div className="text-4xl md:text-5xl font-bold text-gray-750 mb-8 leading-tight">
+                光と影を捉え
+                <br />
+                未来に残す仕事を
+                <br />
+                20年間続けています
               </div>
-
-              {/* 作品3 */}
-              <div className="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl
-  transition-shadow">
-                <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500">[作品サムネイル3]</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    研修・教育動画
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    わかりやすく効果的な教育コンテンツ
-                  </p>
-                </div>
-              </div>
-
-              {/* 作品4 */}
-              <div className="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl
-  transition-shadow">
-                <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500">[作品サムネイル4]</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    商品紹介動画
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    商品の特徴を魅力的にアピール
-                  </p>
-                </div>
-              </div>
-
-              {/* 作品5 */}
-              <div className="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl
-  transition-shadow">
-                <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500">[作品サムネイル5]</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    ウェディング映像
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    一生の思い出を美しく残します
-                  </p>
-                </div>
-              </div>
-
-              {/* 作品6 */}
-              <div className="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl
-  transition-shadow">
-                <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500">[作品サムネイル6]</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    ドキュメンタリー
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    地域の歴史と文化を映像で記録
-                  </p>
-                </div>
-              </div>
+              <Link
+                href="/about"
+                className="inline-flex items-center text-gray-750 hover:text-gray-800 font-semibold text-lg transition-colors"
+              >
+                詳しく見る
+                <svg
+                  className="ml-2 w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </Link>
             </div>
           </div>
-        </section>
-        {/* 会社紹介セクション */}
-        <section className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              {/* 写真側 */}
-              <div className="relative">
-                <div className="aspect-square bg-gray-200 rounded-lg flex items-center justify-center">
-                  <span className="text-gray-500">[代表者写真またはスタジオ写真]</span>
-                </div>
+        </div>
+      </section>
+
+      {/* Serviceセクション */}
+      <section className="py-20 bg-primary-purple">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-left">
+            {/* 左側：テキスト */}
+            <div>
+              <div className="mb-6">
+                <span className="text-white uppercase tracking-widest text-sm font-semibold">
+                  SERVICES
+                </span>
               </div>
 
-              {/* テキスト側 */}
-              <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                  確かな技術と誠実さで<br />
-                  お客様の想いを形に
-                </h2>
-                <p className="text-lg text-gray-600 mb-6">
-                  茨城県と千葉県の境界を拠点に活動するロッコー ビデオサービスです。<br />
-                  企業様から個人のお客様まで、幅広いニーズにお応えしています。
+              <div className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
+                <p>映像だけでなく音響にも詳しい</p>
+                <p>
+                  <span className="text-2xl md:text-3xl">そして</span>
+                  <br />
+                  撮影だけでなくディレクター経験が豊富
                 </p>
-                <p className="text-gray-600 mb-8">
-                  映像制作における企画から撮影、編集、納品まで、一貫したサービスをご提供。<br />
-                  お客様との対話を大切にし、想いを丁寧にヒアリングした上で、<br />
-                  最適な映像表現をご提案いたします。
+                <p className="mb-14">
+                  <span className="text-2xl md:text-3xl">だから</span>
+                  <br />
+                  企画から公開までサポートできる
                 </p>
-
-                {/* 特徴リスト */}
-                <div className="space-y-3">
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
-                    <span className="text-gray-700">地域密着型のきめ細やかなサービス</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
-                    <span className="text-gray-700">企画から納品まで一貫対応</span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span className="text-gray-700">お客様の想いを大切にした制作スタイル</span>
-                  </div>
-                </div>
-
-                <div className="mt-8">
-                  <button className="bg-gray-900 text-white px-8 py-3 hover:bg-gray-800 transition">
-                    詳しく見る
-                  </button>
-                </div>
+                <p className="mb-">これが強みです。</p>
               </div>
-            </div>
-          </div>
-        </section>
-        {/* フッター */}
-        <footer className="bg-gray-900 text-white">
-          <div className="max-w-7xl mx-auto px-4 py-12">
-            <div className="grid md:grid-cols-4 gap-8">
-              {/* 会社情報 */}
-              <div>
-                <h3 className="text-lg font-bold mb-4">650 Video Service</h3>
-                <p className="text-gray-400 text-sm mb-4">
-                  茨城県と千葉県の境界線を拠点とする<br />
-                  映像制作サービス
+              <div className="space-y-6 text-lg md:text-2xl text-gray-100 leading-relaxed">
+                <p>
+                  撮影のみ、編集のみのご依頼も承ります
+                  <br />
+                  予算は相談に応じます
                 </p>
-                <div className="text-gray-400 text-sm">
-                  <p>〒XXX-XXXX</p>
-                  <p>茨城県○○市○○</p>
-                </div>
               </div>
 
-              {/* サービス */}
-              <div>
-                <h4 className="font-semibold mb-4">サービス</h4>
-                <ul className="space-y-2 text-sm text-gray-400">
-                  <li><Link href="/services" className="hover:text-white transition">動画制作サービス</Link></li>
-                  <li><Link href="/services" className="hover:text-white transition">撮影・編集レッスン</Link></li>
-                  <li><Link href="/services" className="hover:text-white transition">動画編集代行</Link></li>
-                </ul>
-              </div>
-
-              {/* リンク */}
-              <div>
-                <h4 className="font-semibold mb-4">メニュー</h4>
-                <ul className="space-y-2 text-sm text-gray-400">
-                  <li><Link href="/" className="hover:text-white transition">ホーム</Link></li>
-                  <li><Link href="/about" className="hover:text-white transition">会社概要</Link></li>
-                  <li><Link href="/blog" className="hover:text-white transition">ブログ</Link></li>
-                  <li><Link href="/contact" className="hover:text-white transition">お問い合わせ</Link></li>
-                </ul>
-              </div>
-
-              {/* SNS・お問い合わせ */}
-              <div>
-                <h4 className="font-semibold mb-4">お問い合わせ</h4>
-                <div className="space-y-2 text-sm text-gray-400 mb-4">
-                  <p>Email: dev@650vs.com</p>
-                  <p>TEL: XXX-XXXX-XXXX</p>
-                </div>
-
-                {/* SNSアイコン */}
-                <div className="flex space-x-4">
-                  <div className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center">
-                    <span className="text-xs">[Insta]</span>
-                  </div>
-                  <div className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center">
-                    <span className="text-xs">[X]</span>
-                  </div>
-                  <div className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center">
-                    <span className="text-xs">[BS]</span>
-                  </div>
-                  <div className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center">
-                    <span className="text-xs">[LINE]</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* 著作権表示 */}
-            <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-              <div className="mb-4">
-                <Link href="/privacy-policy" className="text-sm text-gray-400 hover:text-white transition mr-6">
-                  プライバシーポリシー
-                </Link>
-                <Link href="/cancellation-policy" className="text-sm text-gray-400 hover:text-white transition">
-                  キャンセルポリシー
+              <div className="mt-8">
+                <Link
+                  href="/services"
+                  className="inline-flex items-center bg-white text-primary-purple hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-200"
+                >
+                  詳しく見る
+                  <svg
+                    className="ml-2 w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
                 </Link>
               </div>
-              <p className="text-sm text-gray-400">
-                © 2022 ロッコービデオサービス All rights reserved.
-              </p>
             </div>
           </div>
-        </footer>
-      </div>
-    )
-  }
+        </div>
+      </section>
+
+      {/* 地域情報セクション */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            {/* 左側：画像 */}
+            <div className="relative">
+              <div className="aspect-video bg-gray-200 rounded-2xl flex items-center justify-center text-gray-600 shadow-lg">
+                <span className="text-lg">画像４</span>
+              </div>
+            </div>
+
+            {/* 右側：テキスト */}
+            <div>
+              <div className="mb-6">
+                <span className="text-primary-purple uppercase tracking-widest text-sm font-semibold">
+                  Our Location
+                </span>
+              </div>
+
+              <div className="text-3xl md:text-4xl font-bold text-gray-750 mb-8 leading-tight">
+                茨城県鹿行
+                <span className="text-xl md:text-2xl">（ろっこう）</span>
+                地域を拠点に
+                <br />
+                茨城県、千葉県で活動しています
+              </div>
+              <Link
+                href="/contact"
+                className="inline-flex items-center bg-primary-purple hover:bg-primary-purple-hover text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-200"
+              >
+                お問い合わせ
+                <svg
+                  className="ml-2 w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* フッター */}
+      <footer className="bg-primary-purple text-white py-8">
+        <div className="max-w-7xl mx-auto px-4">
+          {/* 著作権表示 */}
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-4 md:mb-0">
+              <Link
+                href="/privacy-policy"
+                className="text-gray-400 hover:text-white transition-colors mr-6"
+              >
+                プライバシーポリシー
+              </Link>
+              <Link
+                href="/cancellation-policy"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                キャンセルポリシー
+              </Link>
+            </div>
+            <p className="text-gray-400">
+              © 2022 ロッコービデオサービス All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
