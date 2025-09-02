@@ -243,54 +243,28 @@ export default function CancellationPolicy() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">650vs</h3>
-              <p className="text-gray-400 mb-4">
-                茨城県を拠点とする<br />
-                映像制作スタジオ
-              </p>
-              <div className="flex space-x-4">
-                <Link href="#" className="text-gray-400 hover:text-white">Instagram</Link>
-                <Link href="#" className="text-gray-400 hover:text-white">X</Link>
-                <Link href="#" className="text-gray-400 hover:text-white">Bluesky</Link>
-                <Link href="#" className="text-gray-400 hover:text-white">LINE</Link>
-              </div>
+      {/* フッター */}
+      <footer className="bg-gray-900 text-white py-8">
+        <div className="max-w-7xl mx-auto px-4">
+          {/* 著作権表示 */}
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-4 md:mb-0">
+              <Link
+                href="/privacy-policy"
+                className="text-gray-400 hover:text-white transition-colors mr-6"
+              >
+                プライバシーポリシー
+              </Link>
+              <Link
+                href="/cancellation-policy"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                キャンセルポリシー
+              </Link>
             </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">サービス</h4>
-              <ul className="space-y-2">
-                <li><Link href="/services" className="text-gray-400 hover:text-white">企業プロモーション</Link></li>
-                <li><Link href="/services" className="text-gray-400 hover:text-white">イベント撮影</Link></li>
-                <li><Link href="/services" className="text-gray-400 hover:text-white">ウェディング映像</Link></li>
-                <li><Link href="/services" className="text-gray-400 hover:text-white">CM制作</Link></li>
-                <li><Link href="/services" className="text-gray-400 hover:text-white">ショートフィルム</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">会社情報</h4>
-              <ul className="space-y-2">
-                <li><Link href="/about" className="text-gray-400 hover:text-white">会社概要</Link></li>
-                <li><Link href="/about" className="text-gray-400 hover:text-white">チーム紹介</Link></li>
-                <li><Link href="/blog" className="text-gray-400 hover:text-white">ブログ</Link></li>
-                <li><Link href="/contact" className="text-gray-400 hover:text-white">採用情報</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">お問い合わせ</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>〒310-0000</li>
-                <li>茨城県水戸市○○町1-2-3</li>
-                <li>TEL: 029-XXX-XXXX</li>
-                <li>EMAIL: info@650vs.com</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 650vs. All rights reserved.</p>
+            <p className="text-gray-400">
+              © 2022 ロッコービデオサービス All rights reserved.
+            </p>
           </div>
         </div>
       </footer>

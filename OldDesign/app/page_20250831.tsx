@@ -6,35 +6,12 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Navbar />
 
-      {/* ヒーローセクション */}
-      <div className="relative w-full overflow-hidden">
-        {/* 画像 */}
-        <img
-          src="/bold.jpg"
-          alt="ロッコービデオサービス"
-          className="w-full h-auto object-cover block"
-          style={{
-            marginBottom: '-100px'
-          }}
-        />
-
-        {/* 画像の上に重ねるテキスト */}
-        <div className="absolute inset-0 flex items-center py-32 justify-start px-16 md:px-16">
-          <div className="text-white">
-            <div className="mb-1">
-              <span className="text-sm text-gray-100 uppercase tracking-widest">
-                Professional Video Services
-              </span>
-            </div>
-            <h3 className="text-2xl md:text-5xl font-bold mb-0 leading-tight drop-shadow-md">
-              映像制作
-            </h3>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-md">
-              ロッコー ビデオサービス
-            </h1>
-          </div>
-        </div>
-      </div>
+      {/* ヒーローセクション - 画像のみ */}
+      <img
+        src="/bold.jpg"
+        alt="ロッコービデオサービス"
+        className="w-full h-auto object-contain block"
+      />
 
       {/* About Usセクション */}
       <section className="bg-white">
@@ -120,14 +97,14 @@ export default function Home() {
                 <p>
                   撮影のみ、編集のみのご依頼も承ります
                   <br />
-                  予算はご相談に応じます
+                  予算は相談に応じます
                 </p>
               </div>
 
               <div className="mt-8">
                 <Link
                   href="/services"
-                  className="inline-flex items-center text-white hover:text-gray-200 font-semibold text-lg transition-colors"
+                  className="inline-flex items-center bg-white text-primary-purple hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-200"
                 >
                   詳しく見る
                   <svg
@@ -183,22 +160,9 @@ export default function Home() {
 
               <Link
                 href="/contact"
-                className="inline-flex items-center text-primary-purple hover:text-gray-800 font-semibold text-lg transition-colors"
+                className="inline-flex items-center bg-primary-purple text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-200"
               >
                 お問い合わせ
-                <svg
-                  className="ml-2 w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
               </Link>
             </div>
           </div>
@@ -206,7 +170,7 @@ export default function Home() {
       </section>
 
       {/* フッター */}
-      <footer className="bg-gray-900 text-white py-8">
+      <footer className="bg-primary-purple text-white py-8">
         <div className="max-w-7xl mx-auto px-4">
           {/* 著作権表示 */}
           <div className="flex flex-col md:flex-row justify-between items-center">
