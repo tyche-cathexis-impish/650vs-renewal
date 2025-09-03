@@ -469,8 +469,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary-purple: #6a258a;
-  --primary-purple-hover: #6a258a; /* ホバー効果をオフにして様子を見る */
+  --primary: #2cc8d3;
+  --primary-hover: #2cc8d3;
 }
 
 @theme inline {
@@ -497,23 +497,52 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* 改行の余白を0にする */
+.text-sm br, .text-xl br {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+  display: block !important;
+  height: 0 !important;
+}
+
+/* spanタグ内の改行も調整 */
+span br {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+  display: block !important;
+  height: 0 !important;
+}
+
+/* サービス詳細テキストの行間を詰める */
+.text-sm span, .text-xl span {
+  line-height: 1.2 !important;
+}
+
+/* 詳細説明テキストの行間をさらに詰める */
+span.text-sm, span.text-xl {
+  line-height: 1.1 !important;
+  display: block;
+}
+
 /* カスタムカラークラス */
-.text-primary-purple {
-  color: var(--primary-purple);
+.text-primary {
+  color: var(--primary);
 }
 
-.bg-primary-purple {
-  background-color: var(--primary-purple);
+.bg-primary {
+  background-color: var(--primary);
 }
 
-.bg-primary-purple:hover {
-  background-color: var(--primary-purple-hover);
+.bg-primary:hover {
+  background-color: var(--primary-hover);
 }
 
-.text-primary-purple:hover {
-  color: var(--primary-purple-hover);
+.text-primary:hover {
+  color: var(--primary-hover);
 }
 
-.border-primary-purple {
-  border-color: var(--primary-purple);
+.border-primary {
+  border-color: var(--primary);
 }

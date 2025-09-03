@@ -16,7 +16,13 @@
       "Read(C:\\Users\\tam-r\\Downloads/**)",
       "Bash(taskkill:*)",
       "Bash(dir)",
-      "Bash(dir:*)"
+      "Bash(dir:*)",
+      "Read(C:\\Users\\tam-r\\OneDrive\\ドキュメント\\MEGA/**)",
+      "Read(C:\\Users\\tam-r\\OneDrive\\ドキュメント\\MEGA/**)",
+      "Read(C:\\Users\\tam-r\\Desktop\\Website_Remake/**)",
+      "Read(C:\\Users\\tam-r\\OneDrive\\ドキュメント\\MEGA/**)",
+      "Read(C:\\Users\\tam-r\\OneDrive\\ドキュメント\\MEGA/**)",
+      "Bash(npx tailwindcss:*)"
     ],
     "deny": [],
     "ask": [],

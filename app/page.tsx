@@ -54,7 +54,7 @@ export default function Home() {
           <div>
             <div className="px-8 py-20">
               <div className="mb-6">
-                <span className="text-primary-purple uppercase tracking-widest text-sm font-semibold">
+                <span className="text-primary uppercase tracking-widest text-sm font-semibold">
                   ABOUT US
                 </span>
               </div>
@@ -68,7 +68,7 @@ export default function Home() {
               </div>
               <Link
                 href="/about"
-                className="inline-flex items-center text-primary-purple hover:text-gray-800 font-semibold text-lg transition-colors"
+                className="inline-flex items-center text-black hover:text-gray-600 font-semibold text-lg transition-colors"
               >
                 詳しく見る
                 <svg
@@ -91,7 +91,7 @@ export default function Home() {
       </section>
 
       {/* Serviceセクション */}
-      <section className="py-20 bg-primary-purple">
+      <section className="py-20 bg-primary">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-4xl mx-auto text-left">
             {/* 左側：テキスト */}
@@ -117,7 +117,7 @@ export default function Home() {
                 <p className="mb-">これが強みです。</p>
               </div>
               <div className="space-y-6 text-lg md:text-2xl text-gray-100 leading-relaxed">
-                <p>
+                <p className="font-bold">
                   撮影のみ、編集のみのご依頼も承ります
                   <br />
                   予算はご相談に応じます
@@ -168,7 +168,7 @@ export default function Home() {
           <div>
             <div className="px-8 py-20">
               <div className="mb-6">
-                <span className="text-primary-purple uppercase tracking-widest text-sm font-semibold">
+                <span className="text-primary uppercase tracking-widest text-sm font-semibold">
                   Our Location
                 </span>
               </div>
@@ -183,7 +183,7 @@ export default function Home() {
 
               <Link
                 href="/contact"
-                className="inline-flex items-center text-primary-purple hover:text-gray-800 font-semibold text-lg transition-colors"
+                className="inline-flex items-center text-black hover:text-gray-600 font-semibold text-lg transition-colors"
               >
                 お問い合わせ
                 <svg
