@@ -79,7 +79,7 @@ export default function Services() {
             <div className="w-full">
               {/* テキスト */}
               <div className="flex flex-col">
-                <div className="px-8 py-8 min-h-[80px] flex flex-col justify-center">
+                <div className="px-8 md:px-32 py-8 min-h-[80px] flex flex-col justify-center">
                   <div className="text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
                     <p>
                       企業・観光プロモーション動画 <br />
@@ -93,7 +93,7 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="border-t-0 border-white w-full"></div>
-                <div className="px-8 py-8 min-h-[80px] flex flex-col justify-center">
+                <div className="px-8 md:px-32 py-8 min-h-[80px] flex flex-col justify-center">
                   <div className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">
                     <p>
                       イベント撮影＆編集 <br />
@@ -109,7 +109,7 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="border-t-0 border-white w-full"></div>
-                <div className="px-8 py-8 min-h-[80px] flex flex-col justify-center">
+                <div className="px-8 md:px-32 py-8 min-h-[80px] flex flex-col justify-center">
                   <div className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">
                     <p>
                       ブライダル ムービー <br />
@@ -127,7 +127,7 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="border-t-0 border-white w-full"></div>
-                <div className="px-8 py-8 min-h-[80px] flex flex-col justify-center">
+                <div className="px-8 md:px-32 py-8 min-h-[80px] flex flex-col justify-center">
                   <div className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">
                     <p>
                       イベント・セミナー配信 <br />
@@ -143,7 +143,7 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="border-t-0 border-white w-full"></div>
-                <div className="px-8 py-8 min-h-[80px] flex flex-col justify-center">
+                <div className="px-8 md:px-32 py-8 min-h-[80px] flex flex-col justify-center">
                   <div className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">
                     <p>
                       編集のみ <br />
