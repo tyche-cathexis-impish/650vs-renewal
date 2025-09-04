@@ -56,9 +56,22 @@ export default function About() {
               <a
                 href="https://tamulamail.wixsite.com/tamulapastwork-jp"
                 target="_blank"
-                className="text-gray-900 hover:underline"
+                className="inline-flex items-center text-black hover:text-gray-600 font-semibold text-lg transition-colors"
               >
                 主な参加作品
+                <svg
+                  className="ml-2 w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
               </a>
             </p>
           </div>

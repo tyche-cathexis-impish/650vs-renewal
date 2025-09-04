@@ -72,11 +72,11 @@ export default function Services() {
             </div>
           </div>
 
-          <section className="bg-primary -mt-20">
-            <div className="grid md:grid-cols-2 gap-0 items-stretch">
-              {/* 左側：テキスト */}
+          <section className="bg-primary -mt-20 mb-20">
+            <div className="w-full">
+              {/* テキスト */}
               <div className="flex flex-col">
-                <div className="px-8 py-8 min-h-[80px] flex flex-col justify-center">
+                <div className="px-36 py-8 min-h-[80px] flex flex-col justify-center">
                   <div className="text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
                     <p>
                       企業・観光プロモーション動画 <br />
@@ -89,8 +89,8 @@ export default function Services() {
                     </p>
                   </div>
                 </div>
-                <div className="border-t-24 border-white"></div>
-                <div className="px-8 py-8 min-h-[80px] flex flex-col justify-center">
+                <div className="border-t-0 border-white w-full"></div>
+                <div className="px-36 py-8 min-h-[80px] flex flex-col justify-center">
                   <div className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">
                     <p>
                       イベント撮影＆編集 <br />
@@ -105,8 +105,8 @@ export default function Services() {
                     </p>
                   </div>
                 </div>
-                <div className="border-t-24 border-white"></div>
-                <div className="px-8 py-8 min-h-[80px] flex flex-col justify-center">
+                <div className="border-t-0 border-white w-full"></div>
+                <div className="px-36 py-8 min-h-[80px] flex flex-col justify-center">
                   <div className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">
                     <p>
                       ブライダル ムービー <br />
@@ -123,8 +123,8 @@ export default function Services() {
                     </p>
                   </div>
                 </div>
-                <div className="border-t-24 border-white"></div>
-                <div className="px-8 py-8 min-h-[80px] flex flex-col justify-center">
+                <div className="border-t-0 border-white w-full"></div>
+                <div className="px-36 py-8 min-h-[80px] flex flex-col justify-center">
                   <div className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">
                     <p>
                       イベント・セミナー配信 <br />
@@ -139,8 +139,8 @@ export default function Services() {
                     </p>
                   </div>
                 </div>
-                <div className="border-t-24 border-white"></div>
-                <div className="px-8 py-8 min-h-[80px] flex flex-col justify-center">
+                <div className="border-t-0 border-white w-full"></div>
+                <div className="px-36 py-8 min-h-[80px] flex flex-col justify-center">
                   <div className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">
                     <p>
                       編集のみ <br />
@@ -155,24 +155,13 @@ export default function Services() {
                   </div>
                 </div>
               </div>
-
-              {/* 右側：画像 */}
-              <div className="relative">
-                <div className="h-full min-h-[600px] overflow-hidden">
-                  <img
-                    src="/bridal.jpg"
-                    alt="ブライダルムービー"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
             </div>
           </section>
         </section>
 
         {/* 見積、問い合わせセクション */}
         <section className="bg-white">
-          <div className="grid md:grid-cols-2 gap-0 items-center">
+          <div className="grid md:grid-cols-2 gap-0 items-stretch">
             {/* 左側：画像 */}
             <div className="relative">
               <img
@@ -185,7 +174,7 @@ export default function Services() {
             {/* 右側：テキスト */}
             <div>
               <div className="px-8 py-20">
-                <div className="text-3xl md:text-4xl font-bold text-gray-750 mb-8 leading-tight">
+                <div className="text-2xl md:text-3xl font-bold text-gray-750 mb-8 leading-tight">
                   明確な事前見積もりで追加料金なし。 <br />
                   ご予算内で最高品質の映像制作をお約束いたします。 <br />
                   まずはご相談ください。
@@ -216,127 +205,151 @@ export default function Services() {
         </section>
 
         {/* Video Portfolio - Grid Style */}
-        <section className="py-16">
+        <section className="py-16 bg-primary">
           <div className="px-0">
             <div className="text-center mb-16 px-6">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                制作実績
+              <h2 className="text-3xl text-gray-900 font-bold mb-4">
+                制作事例
               </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                これまでに制作した映像作品をご覧ください。
-              </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-0">
+            <div className="grid grid-cols-4 gap-0">
               <a
                 href="https://youtu.be/AmREG5TKuVg"
                 target="_blank"
-                className="group bg-white overflow-hidden hover:opacity-90 transition-opacity"
+                rel="noopener noreferrer"
+                className="aspect-video relative group"
               >
-                <div className="relative aspect-video bg-gray-900">
-                  <div className="w-full h-full bg-gray-300 flex items-center justify-center">
-                    <span className="text-gray-500">[thumb1]</span>
-                  </div>
-                  <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all flex items-center justify-center">
-                    <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center">
-                      <svg
-                        className="w-8 h-8 text-white ml-1"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <h3 className="font-semibold text-gray-900">
-                    イベント記録映像 01
-                  </h3>
-                  <p className="text-sm text-gray-600 mt-1">株式会社○○様</p>
+                <img
+                  src="/thumb_Antlers.jpg"
+                  alt="イベント記録映像 01"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                  <span className="text-white text-sm font-semibold">
+                    イベント記録 01
+                  </span>
                 </div>
               </a>
-
               <a
-                href="https://youtu.be/AmREG5TKuVg"
+                href="https://www.youtube.com/watch?v=o7FPpYijsJY"
                 target="_blank"
-                className="group bg-white overflow-hidden hover:opacity-90 transition-opacity"
+                rel="noopener noreferrer"
+                className="aspect-video relative group"
               >
-                <div className="relative aspect-video bg-gray-900">
-                  <div className="w-full h-full bg-gray-300 flex items-center justify-center">
-                    <span className="text-gray-500">[thumb2]</span>
-                  </div>
-                  <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all flex items-center justify-center">
-                    <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center">
-                      <svg
-                        className="w-8 h-8 text-white ml-1"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <h3 className="font-semibold text-gray-900">
-                    ウェディング映像
-                  </h3>
-                  <p className="text-sm text-gray-600 mt-1">○○様 結婚式</p>
+                <img
+                  src="/lantern_fes.jpg"
+                  alt="イベント記録 02"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                  <span className="text-white text-sm font-semibold">
+                    イベント記録 02
+                  </span>
                 </div>
               </a>
-
               <a
-                href="https://youtube.com/watch?v=dQw4w9WgXcQ"
+                href="https://www.youtube.com/watch?v=YYf4j2vxHig"
                 target="_blank"
-                className="group bg-white overflow-hidden hover:opacity-90 transition-opacity"
+                rel="noopener noreferrer"
+                className="aspect-video relative group"
               >
-                <div className="relative aspect-video bg-gray-900">
-                  <div className="w-full h-full bg-gray-300 flex items-center justify-center">
-                    <span className="text-gray-500">[thumb3]</span>
-                  </div>
-                  <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all flex items-center justify-center">
-                    <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center">
-                      <svg
-                        className="w-8 h-8 text-white ml-1"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <h3 className="font-semibold text-gray-900">イベント撮影</h3>
-                  <p className="text-sm text-gray-600 mt-1">○○イベント様</p>
+                <img
+                  src="/tetote.jpg"
+                  alt="公演記録"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                  <span className="text-white text-sm font-semibold">
+                    公演記録
+                  </span>
                 </div>
               </a>
-
               <a
-                href="https://youtube.com/watch?v=dQw4w9WgXcQ"
+                href="https://www.youtube.com/watch?v=5Pa3fTi-Kmo"
                 target="_blank"
-                className="group bg-white overflow-hidden hover:opacity-90 transition-opacity"
+                rel="noopener noreferrer"
+                className="aspect-video relative group"
               >
-                <div className="relative aspect-video bg-gray-900">
-                  <div className="w-full h-full bg-gray-300 flex items-center justify-center">
-                    <span className="text-gray-500">[thumb4]</span>
-                  </div>
-                  <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all flex items-center justify-center">
-                    <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center">
-                      <svg
-                        className="w-8 h-8 text-white ml-1"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                  </div>
+                <img
+                  src="/catch_friends.jpg"
+                  alt="バラエティ番組"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                  <span className="text-white text-sm font-semibold">
+                    バラエティ番組
+                  </span>
                 </div>
-                <div className="p-4">
-                  <h3 className="font-semibold text-gray-900">CM制作</h3>
-                  <p className="text-sm text-gray-600 mt-1">○○商品CM</p>
+              </a>
+            </div>
+            <div className="grid grid-cols-4 gap-0">
+              <a
+                href="https://www.youtube.com/watch?v=xKtJtJr_xXk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="aspect-video relative group"
+              >
+                <img
+                  src="/ibadai.jpg"
+                  alt="ドキュメンタリー 01"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                  <span className="text-white text-sm font-semibold">
+                    ドキュメンタリー 01
+                  </span>
+                </div>
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=_VjwefeGZnA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="aspect-video relative group"
+              >
+                <img
+                  src="/baguio.jpg"
+                  alt="観光ＰＲ映像"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                  <span className="text-white text-sm font-semibold">
+                    観光ＰＲ映像
+                  </span>
+                </div>
+              </a>
+              <a
+                href="https://www.youtube.com/shorts/-S7mALNdxyM"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="aspect-video relative group"
+              >
+                <img
+                  src="/2bridges.jpg"
+                  alt="ショートドラマ"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                  <span className="text-white text-sm font-semibold">
+                    ショートドラマ
+                  </span>
+                </div>
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=sEK4E189EVQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="aspect-video relative group"
+              >
+                <img
+                  src="/thumb_ajin.jpg"
+                  alt="映画メイキング"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                  <span className="text-white text-sm font-semibold">
+                    映画メイキング
+                  </span>
                 </div>
               </a>
             </div>

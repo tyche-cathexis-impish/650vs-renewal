@@ -27,128 +27,105 @@ export default function PrivacyPolicy() {
             <div className="prose prose-lg max-w-none">
               
               <div className="mb-8">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">1. 趣旨</h2>
                 <p className="text-gray-600 leading-relaxed">
-                  株式会社650vs（以下「当社」といいます。）は、お客様からお預かりした個人情報の保護を重要な責務と考え、
-                  以下のとおりプライバシーポリシーを定め、適切な取り扱いに努めます。
+                  ロッコービデオサービス（以下、「当事業者」とします）は、お客様の貴重な財産である個人情報を保護することは重要な責任であると考えます。当事業者では、以下のとおり個人情報保護方針を定め、お客様よりお預かりした個人情報の適切な管理および保護に努めてまいります。
                 </p>
               </div>
 
               <div className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">1. 個人情報の定義</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">2. 定義</h2>
                 <p className="text-gray-600 leading-relaxed">
-                  個人情報とは、氏名、年齢、電話番号、メールアドレス、SNSアカウントなど、
-                  特定の個人を識別することができる情報をいいます。
+                  個人情報とは、氏名・年齢・電話番号・メールアドレス・ソーシャルメディアアカウントなど個人に関する情報で、これらのうち1つ又は2つ以上を組み合わせることによって、特定の個人を識別することができるものをいいます。
                 </p>
               </div>
 
               <div className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">2. 個人情報の収集方法</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">3. 個人情報の収集方法</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  当社は、以下の方法で個人情報を収集します：
+                  当事業者では、以下の方法で個人情報を収集する場合があります：
                 </p>
                 <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                  <li>お問い合わせフォームからの送信</li>
-                  <li>メールでのお客様とのやり取り</li>
-                  <li>Cookieによる自動収集</li>
+                  <li>お問い合わせフォームからの情報</li>
+                  <li>メールでのやり取り</li>
+                  <li>LINEを通じたお客様とのやり取り</li>
+                  <li>映像制作サービスの提供過程での情報収集</li>
+                  <li>Cookieやその他の技術を使用した自動収集</li>
                 </ul>
               </div>
 
               <div className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">3. 個人情報の利用目的</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">4. 個人情報の利用目的</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  収集した個人情報は、以下の目的で利用いたします：
+                  お客さまからお預かりした個人情報は、以下の目的で利用します：
                 </p>
                 <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                  <li>お客様とのご連絡</li>
-                  <li>サービスの改善</li>
-                  <li>サービスに関するお知らせ</li>
-                  <li>広告の表示および効果測定</li>
+                  <li>映像制作サービスの提供および関連業務の遂行</li>
+                  <li>お客様へのご連絡とサポート</li>
+                  <li>サービス内容の向上を目的とした事例分析</li>
+                  <li>サービスのご案内</li>
                 </ul>
+                <p className="text-gray-600 leading-relaxed mt-4">
+                  お客様がご自身の個人情報を当事業者に提供されるか否かはお客様のご判断によります。もしご提供されない場合には、本ウェブサイトで提供するサービスが提供できない場合がありますので予めご了承ください。
+                </p>
               </div>
 
               <div className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">4. 第三者サービスの利用</h2>
-                <div className="mb-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Google AdSense</h3>
-                  <p className="text-gray-600 leading-relaxed mb-3">
-                    当サイトではGoogle AdSenseを利用しており、Cookieを使用して広告を表示しています。
-                    Cookieを無効にする方法については、Googleの広告設定ページをご確認ください。
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Amazonアソシエイト</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    当サイトはAmazonアソシエイト・プログラムに参加しており、
-                    商品の紹介により収益を得る場合があります。
-                  </p>
-                </div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">5. 撮影・制作における個人情報の取扱い</h2>
+                <p className="text-gray-600 leading-relaxed">
+                  映像制作サービスの提供において、撮影対象者の肖像権および個人情報については、事前に適切な同意を得た上で取扱います。制作された映像素材は、お客様との契約に基づいて適切に管理・利用いたします。
+                </p>
               </div>
 
               <div className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">5. 個人情報の第三者提供</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">6. 個人情報の第三者への開示、利用の制限</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  当社は、以下の場合を除き、個人情報を第三者に提供いたしません：
+                  当事業者はお客さまよりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き個人情報を第三者に開示しません。
                 </p>
                 <ul className="list-disc pl-6 text-gray-600 space-y-2">
                   <li>法令に基づく場合</li>
-                  <li>お客様の同意がある場合</li>
-                  <li>サービス提供に必要な業務委託先への提供</li>
-                  <li>個人を特定しない統計データとしての広告・解析目的での利用</li>
+                  <li>お客さまの同意がある場合</li>
+                  <li>お客さまが希望されるサービスを行うために業務を委託する場合</li>
+                  <li>ウェブサイト運営およびサービス改善のためのアクセス解析が必要な場合（この場合、個人を特定する情報は含まれません）</li>
                 </ul>
               </div>
 
               <div className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">6. お客様の権利</h2>
-                <p className="text-gray-600 leading-relaxed mb-4">
-                  お客様は、当社が保有する個人情報について、以下の権利を有します：
-                </p>
-                <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                  <li>個人情報の開示請求</li>
-                  <li>個人情報の削除請求</li>
-                  <li>個人情報の利用停止請求</li>
-                </ul>
-                <p className="text-gray-600 leading-relaxed mt-4">
-                  これらのご請求は、以下の連絡先までお寄せください：<br />
-                  <strong>contact@650vs.com</strong>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">7. 業務委託における個人情報の管理</h2>
+                <p className="text-gray-600 leading-relaxed">
+                  当事業者の業務の全部または一部を外部に業務委託する際、当事業者は個人情報を適切に保護できる管理体制を敷き実行していることを条件に委託先を厳選し、お客様の個人情報を厳密に管理・監督しています。
                 </p>
               </div>
 
               <div className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">7. 個人情報の安全管理</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">8. お客様からの使用停止、削除等の申し込みへの応諾</h2>
                 <p className="text-gray-600 leading-relaxed">
-                  当社は、個人情報の漏洩、滅失、毀損の防止その他個人情報の安全管理のため、
-                  必要かつ適切な措置を講じます。
-                </p>
-              </div>
-
-              <div className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">8. プライバシーポリシーの変更</h2>
-                <p className="text-gray-600 leading-relaxed">
-                  当社は、必要に応じて本プライバシーポリシーを変更することがあります。
-                  変更後のプライバシーポリシーは、当サイトに掲載した時点から効力を生じるものとします。
+                  お客様は、当事業者に対してご自身の個人情報の開示や訂正を要求したり、またはお客様の個人情報を利用、提供することを中止させるために本ウェブサイトの問合わせ窓口に申し出ることができます。その際はお客様ご本人を確認させていただいたうえで合理的な期間内に対応いたします。
                 </p>
               </div>
 
               <div className="mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">9. お問い合わせ</h2>
-                <p className="text-gray-600 leading-relaxed">
-                  本プライバシーポリシーに関するお問い合わせは、以下までご連絡ください：
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  本ウェブサイトの個人情報取り扱いに関するお問い合わせは下記までご連絡ください。
                 </p>
-                <div className="bg-gray-50 p-6 rounded-lg mt-4">
-                  <p className="text-gray-900 font-semibold mb-2">株式会社650vs</p>
+                <div className="bg-gray-50 p-6 rounded-lg">
+                  <p className="text-gray-900 font-semibold mb-2">ロッコービデオサービス</p>
                   <p className="text-gray-600">Email: contact@650vs.com</p>
-                  <p className="text-gray-600">TEL: 029-XXX-XXXX</p>
-                  <p className="text-gray-600">
-                    〒310-0000<br />
-                    茨城県水戸市○○町1-2-3 ○○ビル3F
-                  </p>
+                  <p className="text-gray-600">LINE: @605mgbvo</p>
                 </div>
               </div>
 
               <div className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">制定・改定履歴</h2>
-                <p className="text-gray-600">制定日：2022年1月25日</p>
-                <p className="text-gray-600">最終改定日：2024年9月27日</p>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">10. 内容の改定</h2>
+                <p className="text-gray-600 leading-relaxed">
+                  本ウェブサイトの個人情報の取り扱い内容は予告なく改定する場合があります。改定した内容は本ウェブサイト内にて掲載いたします。
+                </p>
+              </div>
+
+              <div className="mb-8 text-gray-600">
+                <p>2022年1月25日制定</p>
+                <p>2025年1月改定</p>
               </div>
 
             </div>
@@ -156,7 +133,7 @@ export default function PrivacyPolicy() {
             <div className="mt-12 text-center">
               <Link 
                 href="/" 
-                className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 inline-block"
+                className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/80 transition duration-300 inline-block"
               >
                 ホームページに戻る
               </Link>
