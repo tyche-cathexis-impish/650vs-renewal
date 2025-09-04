@@ -14,22 +14,22 @@ export default function Home() {
           alt="ロッコービデオサービス"
           className="w-full h-auto object-cover block"
           style={{
-            marginBottom: '-100px'
+            marginBottom: '-50px'
           }}
         />
 
         {/* 画像の上に重ねるテキスト */}
-        <div className="absolute inset-0 flex items-center py-32 justify-start px-16 md:px-16">
+        <div className="absolute inset-0 flex items-center py-16 md:py-32 justify-start px-8 md:px-16">
           <div className="text-white">
             <div className="mb-1">
-              <span className="text-sm text-gray-100 uppercase tracking-widest">
+              <span className="text-xs md:text-sm text-gray-100 uppercase tracking-widest">
                 Professional Video Services
               </span>
             </div>
-            <h3 className="text-2xl md:text-5xl font-bold mb-0 leading-tight drop-shadow-md">
+            <h3 className="text-xl md:text-5xl font-bold mb-0 leading-tight drop-shadow-md">
               映像制作
             </h3>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-md">
+            <h1 className="text-2xl md:text-6xl font-bold leading-tight drop-shadow-md">
               ロッコー ビデオサービス
             </h1>
           </div>
@@ -39,8 +39,8 @@ export default function Home() {
       {/* About Usセクション */}
       <section className="bg-white">
         <div className="grid md:grid-cols-2 gap-0 items-center">
-          {/* 左側：画像 */}
-          <div className="relative">
+          {/* 左側：画像 - PCのみ表示 */}
+          <div className="relative hidden md:block">
             <div className="h-[500px] overflow-hidden">
               <img
                 src="/sapporo.jpg"

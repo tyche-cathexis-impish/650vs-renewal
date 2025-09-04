@@ -451,6 +451,40 @@
   max-height: 180px !important;
 }
 
+
+/* モバイル表示（767px以下）でnote-link-cardをシンプルに */
+@media (max-width: 767px) {
+  .prose-note .note-link-card,
+  .prose-note a.note-link-card {
+    display: block !important;
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    width: calc(100% - 32px) !important;
+    max-width: calc(100% - 32px) !important;
+    padding: 16px !important;
+  }
+
+  .prose-note .note-link-card-content {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  .prose-note .note-link-card-title {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    -webkit-line-clamp: 3 !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .prose-note .note-link-card-image {
+    display: none !important;
+  }
+}
+
 /* ユーティリティクラス */
 .line-clamp-2 {
   display: -webkit-box;

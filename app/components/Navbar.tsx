@@ -13,8 +13,9 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* ロゴ */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold text-gray-750">
-              映像制作｜ロッコービデオサービス
+            <Link href="/" className="text-xl md:text-2xl font-bold text-gray-750">
+              <span className="hidden sm:inline">映像制作｜ロッコービデオサービス</span>
+              <span className="sm:hidden">R.V.S.</span>
             </Link>
           </div>
 

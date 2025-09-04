@@ -12,20 +12,22 @@ export default function About() {
         <img
           src="/drone_hero.jpg"
           alt="about us"
-          className="w-full h-auto object-cover block"
+          className="w-full object-cover block"
           style={{
             marginTop: "-30px",
-            marginBottom: "-300px",
+            marginBottom: "-100px",
+            height: "400px",
+            objectFit: "cover"
           }}
         />
         {/* 画像の上に黒フィルターを挿入して暗くする */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
 
         {/* 画像の上に重ねるテキスト */}
-        <div className="absolute inset-0 flex items-center py-32 justify-center px-16 md:px-16">
-          <div className="text-white">
+        <div className="absolute inset-0 flex items-center py-16 md:py-32 justify-center px-8 md:px-16">
+          <div className="text-white text-center">
             <div className="mb-1"></div>
-            <h3 className="text-2xl md:text-5xl font-bold mb-0 leading-tight drop-shadow-md">
+            <h3 className="text-xl md:text-5xl font-bold mb-0 leading-tight drop-shadow-md">
               About ロッコービデオサービス
             </h3>
           </div>
@@ -35,10 +37,10 @@ export default function About() {
       {/* Company Story */}
       <section className="py-16">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-normal text-gray-900 mb-6 text-left">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-normal text-gray-900 mb-6 text-left md:whitespace-nowrap">
               <span className="text-base">代表</span> 田村秀昭{" "}
-              <span className="text-xl">Hideaki Tamura</span>
+              <span className="text-lg">Hideaki Tamura</span>
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed text-left">
               　20年以上、映画・ドラマのスタッフとして活動。
@@ -78,26 +80,26 @@ export default function About() {
         </div>
 
         {/* 3分割画像 */}
-        <div className="grid grid-cols-3 gap-0">
-          <div className="h-80">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
+          <div className="h-auto md:h-80">
             <img
               src="/R0012027.jpg"
               alt="About 1"
-              className="w-full h-full object-cover"
+              className="w-full h-auto md:h-full object-cover"
             />
           </div>
-          <div className="h-80">
+          <div className="h-auto md:h-80">
             <img
               src="/Tam.jpg"
               alt="About 2"
-              className="w-full h-full object-cover"
+              className="w-full h-auto md:h-full object-cover"
             />
           </div>
-          <div className="h-80">
+          <div className="h-auto md:h-80">
             <img
               src="/SoundMixer.jpg"
               alt="Hideaki Tamura"
-              className="w-full h-full object-cover"
+              className="w-full h-auto md:h-full object-cover"
             />
           </div>
         </div>

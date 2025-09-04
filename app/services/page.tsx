@@ -11,24 +11,27 @@ export default function Services() {
         <div className="relative w-full overflow-hidden -mb-20">
           {/* 画像 */}
           <img
-            src="/service_hero.jpg"
+            src="/services_hero.jpg"
             alt="our services"
-            className="w-full h-auto object-cover block"
+            className="w-full object-cover block"
             style={{
-              marginTop: "-200px",
-              marginBottom: "-1100px",
+              marginTop: "-60px",
+              marginBottom: "-0px",
+              height: "300px",
+              objectFit: "cover",
             }}
           />
-
+          {/* 画像の上に黒フィルターを挿入して暗くする */}
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           {/* 画像の上に重ねるテキスト */}
           <div className="absolute inset-0 flex items-center py-32 justify-center px-16 md:px-16">
-            <div className="text-white">
+            <div className="text-white text-center">
               <div className="mb-1"></div>
               <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-md">
                 Our Services
               </h1>
-              <h3 className="text-2xl md:text-3xl font-bold mb-0 leading-tight drop-shadow-md">
-                プロフェッショナルなサービス
+              <h3 className="text-xl md:text-2xl font-bold mb-0 leading-tight drop-shadow-md">
+                プロフェッショナル
               </h3>
             </div>
           </div>
@@ -37,8 +40,8 @@ export default function Services() {
         {/* our pricing セクション */}
         <section className="bg-white -mt-20 -mb-20">
           <div className="grid md:grid-cols-2 gap-0 items-center h-[500px]">
-            {/* 左側：画像 */}
-            <div className="relative">
+            {/* 左側：画像 - PCのみ表示 */}
+            <div className="relative hidden md:block">
               <div className="h-[340px] overflow-hidden">
                 <img
                   src="/Bus_1570.JPG"
@@ -76,7 +79,7 @@ export default function Services() {
             <div className="w-full">
               {/* テキスト */}
               <div className="flex flex-col">
-                <div className="px-36 py-8 min-h-[80px] flex flex-col justify-center">
+                <div className="px-8 py-8 min-h-[80px] flex flex-col justify-center">
                   <div className="text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
                     <p>
                       企業・観光プロモーション動画 <br />
@@ -90,7 +93,7 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="border-t-0 border-white w-full"></div>
-                <div className="px-36 py-8 min-h-[80px] flex flex-col justify-center">
+                <div className="px-8 py-8 min-h-[80px] flex flex-col justify-center">
                   <div className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">
                     <p>
                       イベント撮影＆編集 <br />
@@ -106,7 +109,7 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="border-t-0 border-white w-full"></div>
-                <div className="px-36 py-8 min-h-[80px] flex flex-col justify-center">
+                <div className="px-8 py-8 min-h-[80px] flex flex-col justify-center">
                   <div className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">
                     <p>
                       ブライダル ムービー <br />
@@ -124,7 +127,7 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="border-t-0 border-white w-full"></div>
-                <div className="px-36 py-8 min-h-[80px] flex flex-col justify-center">
+                <div className="px-8 py-8 min-h-[80px] flex flex-col justify-center">
                   <div className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">
                     <p>
                       イベント・セミナー配信 <br />
@@ -140,7 +143,7 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="border-t-0 border-white w-full"></div>
-                <div className="px-36 py-8 min-h-[80px] flex flex-col justify-center">
+                <div className="px-8 py-8 min-h-[80px] flex flex-col justify-center">
                   <div className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">
                     <p>
                       編集のみ <br />
@@ -213,7 +216,7 @@ export default function Services() {
               </h2>
             </div>
 
-            <div className="grid grid-cols-4 gap-0">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-0">
               <a
                 href="https://youtu.be/AmREG5TKuVg"
                 target="_blank"
@@ -225,7 +228,7 @@ export default function Services() {
                   alt="イベント記録映像 01"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <span className="text-white text-sm font-semibold">
                     イベント記録 01
                   </span>
@@ -242,7 +245,7 @@ export default function Services() {
                   alt="イベント記録 02"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <span className="text-white text-sm font-semibold">
                     イベント記録 02
                   </span>
@@ -259,7 +262,7 @@ export default function Services() {
                   alt="公演記録"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <span className="text-white text-sm font-semibold">
                     公演記録
                   </span>
@@ -276,14 +279,14 @@ export default function Services() {
                   alt="バラエティ番組"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <span className="text-white text-sm font-semibold">
                     バラエティ番組
                   </span>
                 </div>
               </a>
             </div>
-            <div className="grid grid-cols-4 gap-0">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-0">
               <a
                 href="https://www.youtube.com/watch?v=xKtJtJr_xXk"
                 target="_blank"
@@ -292,12 +295,12 @@ export default function Services() {
               >
                 <img
                   src="/ibadai.jpg"
-                  alt="ドキュメンタリー 01"
+                  alt="ドキュメンタリー"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <span className="text-white text-sm font-semibold">
-                    ドキュメンタリー 01
+                    ドキュメンタリー
                   </span>
                 </div>
               </a>
@@ -309,12 +312,12 @@ export default function Services() {
               >
                 <img
                   src="/baguio.jpg"
-                  alt="観光ＰＲ映像"
+                  alt="観光プロモーション映像"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <span className="text-white text-sm font-semibold">
-                    観光ＰＲ映像
+                    観光プロモーション映像
                   </span>
                 </div>
               </a>
@@ -329,7 +332,7 @@ export default function Services() {
                   alt="ショートドラマ"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <span className="text-white text-sm font-semibold">
                     ショートドラマ
                   </span>
@@ -346,11 +349,35 @@ export default function Services() {
                   alt="映画メイキング"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <span className="text-white text-sm font-semibold">
                     映画メイキング
                   </span>
                 </div>
+              </a>
+            </div>
+
+            {/* 主な参加作品リンク */}
+            <div className="text-left px-6 pt-8">
+              <a
+                href="https://tamulamail.wixsite.com/tamulapastwork-jp"
+                target="_blank"
+                className="inline-flex items-center text-black hover:text-gray-600 text-lg transition-colors"
+              >
+                その他 主な参加作品
+                <svg
+                  className="ml-2 w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
               </a>
             </div>
           </div>
