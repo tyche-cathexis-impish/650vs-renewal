@@ -45,7 +45,9 @@
       "Read(/C:\\Users\\tam-r\\OneDrive\\ドキュメント\\MEGA\\RVS on MEGA\\website\\650vs-renewal/**)",
       "Read(/C:\\Users\\tam-r\\OneDrive\\ドキュメント\\MEGA\\RVS on MEGA\\website\\650vs-renewal/**)",
       "Read(/C:\\Users\\tam-r\\Downloads/**)",
-      "Read(/C:\\Users\\tam-r\\OneDrive\\ドキュメント\\MEGA\\RVS on MEGA\\website\\650vs-renewal/**)"
+      "Read(/C:\\Users\\tam-r\\OneDrive\\ドキュメント\\MEGA\\RVS on MEGA\\website\\650vs-renewal/**)",
+      "Read(/C:\\Users\\tam-r\\OneDrive\\ドキュメント\\MEGA\\RVS on MEGA\\website\\650vs-renewal\\app\\blog\\[slug]/**)",
+      "Read(/C:\\Users\\tam-r\\OneDrive\\ドキュメント\\MEGA\\RVS on MEGA\\website\\650vs-renewal\\out/**)"
     ],
     "deny": [],
     "ask": [],

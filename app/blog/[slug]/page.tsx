@@ -5,8 +5,13 @@ import { notFound } from 'next/navigation'
 import { getPostById, getAllPosts, convertToLegacyFormat } from '../../lib/microcms'
 import { processLinkCards } from '../../lib/linkCardProcessor'
 
-// Force dynamic rendering to avoid static generation issues
-export const dynamic = 'force-dynamic'
+// Generate static params for all blog posts
+export async function generateStaticParams() {
+  const posts = await getAllPosts()
+  return posts.map((post) => ({
+    slug: post.id,
+  }))
+}
 
 interface BlogPostPageProps {
   params: Promise<{
