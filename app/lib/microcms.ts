@@ -110,7 +110,7 @@ export async function getPostsWithPagination(offset = 0, limit = 10) {
 export function convertToLegacyFormat(post: BlogPost) {
   // Handle category - it can be null, string, or object
   const categoryName = post.category 
-    ? (typeof post.category === 'string' ? post.category : (post.category as any)?.name || 'カテゴリなし')
+    ? (typeof post.category === 'string' ? post.category : (post.category as { name?: string })?.name || 'カテゴリなし')
     : 'カテゴリなし';
 
   return {

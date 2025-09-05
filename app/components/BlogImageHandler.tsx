@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 import ImageLightbox from "./ImageLightbox";
-import LinkCard from "./LinkCard";
+// import LinkCard from "./LinkCard";
 
 interface BlogImageHandlerProps {
   children: React.ReactNode;

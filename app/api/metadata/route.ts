@@ -61,8 +61,8 @@ export async function GET(request: NextRequest) {
 
   } catch (error) {
     console.error('Failed to fetch metadata for:', url, error)
-    console.error('Error type:', error.name)
-    console.error('Error message:', error.message)
+    console.error('Error type:', error instanceof Error ? error.name : typeof error)
+    console.error('Error message:', error instanceof Error ? error.message : String(error))
     
     // Return error details for debugging
     return NextResponse.json({
@@ -70,8 +70,8 @@ export async function GET(request: NextRequest) {
       description: '',
       image: null,
       url,
-      error: error.message,
-      errorType: error.name
+      error: error instanceof Error ? error.message : String(error),
+      errorType: error instanceof Error ? error.name : typeof error
     }, { status: 200 })
   }
 }

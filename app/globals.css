@@ -451,7 +451,6 @@
   max-height: 180px !important;
 }
 
-
 /* モバイル表示（767px以下）でnote-link-cardをシンプルに */
 @media (max-width: 767px) {
   .prose-note .note-link-card,
@@ -532,7 +531,8 @@ body {
 }
 
 /* 改行の余白を0にする */
-.text-sm br, .text-xl br {
+.text-sm br,
+.text-xl br {
   margin: 0 !important;
   padding: 0 !important;
   line-height: 0 !important;
@@ -550,12 +550,14 @@ span br {
 }
 
 /* サービス詳細テキストの行間を詰める */
-.text-sm span, .text-xl span {
+.text-sm span,
+.text-xl span {
   line-height: 1.2 !important;
 }
 
 /* 詳細説明テキストの行間をさらに詰める */
-span.text-sm, span.text-xl {
+span.text-sm,
+span.text-xl {
   line-height: 1.1 !important;
   display: block;
 }

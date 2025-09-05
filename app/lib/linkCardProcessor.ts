@@ -16,7 +16,7 @@ export async function processLinkCards(content: string): Promise<string> {
     
     for (const match of matches) {
       const fullMatch = match[0]  // entire <a> tag
-      const fullUrl = match[1]    // URL
+      // const fullUrl = match[1]    // URL
       const slug = match[2].replace(/\/$/, '') // slug with trailing slash removed
       
       const post = allPosts.find(p => p.slug === slug)

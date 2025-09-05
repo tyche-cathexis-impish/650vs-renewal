@@ -13,18 +13,12 @@ export default function Services() {
           <img
             src="/services_hero.jpg"
             alt="our services"
-            className="w-full object-cover block"
-            style={{
-              marginTop: "-60px",
-              marginBottom: "-0px",
-              height: "300px",
-              objectFit: "cover",
-            }}
+            className="w-full h-auto object-cover block -mt-[60px]"
           />
           {/* 画像の上に黒フィルターを挿入して暗くする */}
           <div className="absolute inset-0 bg-black opacity-50"></div>
           {/* 画像の上に重ねるテキスト */}
-          <div className="absolute inset-0 flex items-center py-32 justify-center px-16 md:px-16">
+          <div className="absolute inset-0 flex items-center py-16 md:py-32 justify-center px-16 md:px-16">
             <div className="text-white text-center">
               <div className="mb-1"></div>
               <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-md">

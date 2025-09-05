@@ -159,7 +159,7 @@ export default function Home() {
               <img
                 src="/about02_650vs.jpg"
                 alt="Our Location"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover md:object-center object-[center_-80px]"
               />
             </div>
           </div>
