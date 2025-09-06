@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "./components/Navbar";
 
 export default function Home() {
@@ -9,13 +10,17 @@ export default function Home() {
       {/* ヒーローセクション */}
       <div className="relative w-full overflow-hidden">
         {/* 画像 */}
-        <img
+        <Image
           src="/bold.jpg"
           alt="ロッコービデオサービス"
+          width={1920}
+          height={1080}
           className="w-full h-auto object-cover block"
           style={{
             marginBottom: "-50px",
           }}
+          priority
+          quality={85}
         />
 
         {/* 画像の上に重ねるテキスト */}
@@ -42,10 +47,13 @@ export default function Home() {
           {/* 左側：画像 - PCのみ表示 */}
           <div className="relative hidden md:block">
             <div className="h-[500px] overflow-hidden">
-              <img
+              <Image
                 src="/Sapporo.jpg"
                 alt="About us - ロッコービデオサービス"
+                width={800}
+                height={500}
                 className="w-full h-full object-cover"
+                quality={80}
               />
             </div>
           </div>
@@ -156,10 +164,13 @@ export default function Home() {
           {/* 左側：画像 */}
           <div className="relative">
             <div className="h-[500px] overflow-hidden">
-              <img
+              <Image
                 src="/about02_650vs.jpg"
                 alt="Our Location"
+                width={800}
+                height={500}
                 className="w-full h-full object-cover md:object-center object-[center_-80px]"
+                quality={80}
               />
             </div>
           </div>

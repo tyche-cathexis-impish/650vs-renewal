@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import Navbar from '../../components/Navbar'
 import BlogImageHandler from '../../components/BlogImageHandler'
 import { notFound } from 'next/navigation'
@@ -142,10 +143,13 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
                   {/* Thumbnail */}
                   <div className="w-16 h-12 bg-gray-200 rounded flex-shrink-0 overflow-hidden">
                     {popularPost.image ? (
-                      <img 
+                      <Image 
                         src={popularPost.image} 
                         alt={popularPost.title}
+                        width={64}
+                        height={48}
                         className="w-full h-full object-cover"
+                        quality={80}
                       />
                     ) : (
                       <div className="w-full h-full bg-gray-100 flex items-center justify-center">

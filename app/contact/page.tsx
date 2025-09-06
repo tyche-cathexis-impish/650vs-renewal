@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "../components/Navbar";
 
 export default function Contact() {
@@ -211,10 +212,13 @@ export default function Contact() {
               </h2>
 
               <div className="mb-8">
-                <img
+                <Image
                   src="\Line_Official_QR.png"
                   alt="QRコード"
+                  width={192}
+                  height={192}
                   className="w-48 h-48 mx-auto"
+                  quality={85}
                 />
               </div>
 

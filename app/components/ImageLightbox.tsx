@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
+import Image from 'next/image'
 
 interface ImageLightboxProps {
   isOpen: boolean
@@ -52,11 +53,13 @@ export default function ImageLightbox({ isOpen, src, alt, onClose }: ImageLightb
         </button>
         
         {/* Image */}
-        <img
+        <Image
           src={src}
           alt={alt}
+          fill
           className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
           onClick={(e) => e.stopPropagation()}
+          quality={90}
         />
         
         {/* Image Info */}

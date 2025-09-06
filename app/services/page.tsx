@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "../components/Navbar";
 
 export default function Services() {
@@ -10,10 +11,14 @@ export default function Services() {
         {/* ヒーローセクション */}
         <div className="relative w-full overflow-hidden -mb-20">
           {/* 画像 */}
-          <img
+          <Image
             src="/services_hero.jpg"
             alt="our services"
+            width={1920}
+            height={1080}
             className="w-full h-auto object-cover block -mt-[60px]"
+            quality={90}
+            priority
           />
           {/* 画像の上に黒フィルターを挿入して暗くする */}
           <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -37,10 +42,13 @@ export default function Services() {
             {/* 左側：画像 - PCのみ表示 */}
             <div className="relative hidden md:block">
               <div className="h-[340px] overflow-hidden">
-                <img
+                <Image
                   src="/Bus_1570.JPG"
                   alt="SHoooting Scene"
+                  width={600}
+                  height={340}
                   className="w-full h-full object-cover object-top"
+                  quality={85}
                 />
               </div>
             </div>
@@ -161,10 +169,13 @@ export default function Services() {
           <div className="grid md:grid-cols-2 gap-0 items-stretch">
             {/* 左側：画像 */}
             <div className="relative">
-              <img
+              <Image
                 src="/shoot_concert.jpg"
                 alt="Our Location"
+                width={600}
+                height={400}
                 className="w-full h-auto object-cover"
+                quality={85}
               />
             </div>
 
@@ -217,10 +228,13 @@ export default function Services() {
                 rel="noopener noreferrer"
                 className="aspect-video relative group"
               >
-                <img
+                <Image
                   src="/thumb_Antlers.jpg"
                   alt="イベント記録映像 01"
+                  width={400}
+                  height={225}
                   className="w-full h-full object-cover"
+                  quality={80}
                 />
                 <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <span className="text-white text-sm font-semibold">
@@ -234,10 +248,13 @@ export default function Services() {
                 rel="noopener noreferrer"
                 className="aspect-video relative group"
               >
-                <img
+                <Image
                   src="/lantern_fes.jpg"
                   alt="イベント記録 02"
+                  width={400}
+                  height={225}
                   className="w-full h-full object-cover"
+                  quality={80}
                 />
                 <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <span className="text-white text-sm font-semibold">
@@ -251,10 +268,13 @@ export default function Services() {
                 rel="noopener noreferrer"
                 className="aspect-video relative group"
               >
-                <img
+                <Image
                   src="/tetote.jpg"
                   alt="公演記録"
+                  width={400}
+                  height={225}
                   className="w-full h-full object-cover"
+                  quality={80}
                 />
                 <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <span className="text-white text-sm font-semibold">
@@ -268,10 +288,13 @@ export default function Services() {
                 rel="noopener noreferrer"
                 className="aspect-video relative group"
               >
-                <img
+                <Image
                   src="/catch_friends.jpg"
                   alt="バラエティ番組"
+                  width={400}
+                  height={225}
                   className="w-full h-full object-cover"
+                  quality={80}
                 />
                 <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <span className="text-white text-sm font-semibold">
@@ -287,10 +310,13 @@ export default function Services() {
                 rel="noopener noreferrer"
                 className="aspect-video relative group"
               >
-                <img
+                <Image
                   src="/ibadai.jpg"
                   alt="ドキュメンタリー"
+                  width={400}
+                  height={225}
                   className="w-full h-full object-cover"
+                  quality={80}
                 />
                 <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <span className="text-white text-sm font-semibold">
@@ -304,10 +330,13 @@ export default function Services() {
                 rel="noopener noreferrer"
                 className="aspect-video relative group"
               >
-                <img
+                <Image
                   src="/baguio.jpg"
                   alt="観光プロモーション映像"
+                  width={400}
+                  height={225}
                   className="w-full h-full object-cover"
+                  quality={80}
                 />
                 <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <span className="text-white text-sm font-semibold">
@@ -321,10 +350,13 @@ export default function Services() {
                 rel="noopener noreferrer"
                 className="aspect-video relative group"
               >
-                <img
+                <Image
                   src="/2bridges.jpg"
                   alt="ショートドラマ"
+                  width={400}
+                  height={225}
                   className="w-full h-full object-cover"
+                  quality={80}
                 />
                 <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <span className="text-white text-sm font-semibold">
@@ -338,10 +370,13 @@ export default function Services() {
                 rel="noopener noreferrer"
                 className="aspect-video relative group"
               >
-                <img
+                <Image
                   src="/thumb_ajin.jpg"
                   alt="映画メイキング"
+                  width={400}
+                  height={225}
                   className="w-full h-full object-cover"
+                  quality={80}
                 />
                 <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <span className="text-white text-sm font-semibold">

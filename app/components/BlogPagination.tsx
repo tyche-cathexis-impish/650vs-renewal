@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { BlogPost } from '../lib/blogData'
 
 interface BlogPaginationProps {
@@ -80,10 +81,13 @@ export default function BlogPagination({ posts, postsPerPage = 12 }: BlogPaginat
                   <article className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-all duration-300 cursor-pointer h-full">
                     <div className="bg-gray-200 h-48 flex items-center justify-center overflow-hidden">
                       {post.image ? (
-                        <img 
+                        <Image 
                           src={post.image} 
                           alt={post.title}
+                          width={300}
+                          height={192}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          quality={80}
                         />
                       ) : (
                         <span className="text-gray-500">[記事画像]</span>

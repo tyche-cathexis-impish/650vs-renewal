@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "../components/Navbar";
 
 export default function About() {
@@ -9,9 +10,11 @@ export default function About() {
       {/* ヒーローセクション */}
       <div className="relative w-full overflow-hidden">
         {/* 画像 */}
-        <img
+        <Image
           src="/drone_hero.jpg"
           alt="about us"
+          width={1920}
+          height={400}
           className="w-full object-cover block"
           style={{
             marginTop: "-30px",
@@ -19,6 +22,8 @@ export default function About() {
             height: "400px",
             objectFit: "cover",
           }}
+          priority
+          quality={85}
         />
         {/* 画像の上に黒フィルターを挿入して暗くする */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -82,24 +87,33 @@ export default function About() {
         {/* 3分割画像 */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
           <div className="h-auto md:h-80">
-            <img
+            <Image
               src="/R0012027.JPG"
               alt="About 1"
+              width={600}
+              height={320}
               className="w-full h-auto md:h-full object-cover"
+              quality={80}
             />
           </div>
           <div className="h-auto md:h-80">
-            <img
+            <Image
               src="/Tam.jpg"
               alt="About 2"
+              width={600}
+              height={320}
               className="w-full h-auto md:h-full object-cover"
+              quality={80}
             />
           </div>
           <div className="h-auto md:h-80">
-            <img
+            <Image
               src="/SoundMixer.jpg"
               alt="Hideaki Tamura"
+              width={600}
+              height={320}
               className="w-full h-auto md:h-full object-cover"
+              quality={80}
             />
           </div>
         </div>
