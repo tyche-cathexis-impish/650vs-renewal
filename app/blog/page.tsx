@@ -1,7 +1,22 @@
 import Link from 'next/link'
 import Navbar from '../components/Navbar'
+import Breadcrumbs from '../components/Breadcrumbs'
 import BlogPagination from '../components/BlogPagination'
 import { getAllPosts, convertToLegacyFormat } from '../lib/microcms'
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ブログ",
+  description: "ロッコービデオサービスのブログ。映像制作に関する技術情報、制作事例、業界トレンドなどをお届けします。",
+  keywords: ["映像制作ブログ", "技術情報", "制作事例", "業界トレンド", "撮影技術", "編集技術"],
+  openGraph: {
+    title: "ブログ | ロッコービデオサービス",
+    description: "映像制作に関する技術情報、制作事例、業界トレンドなどをお届けします。",
+  },
+  alternates: {
+    canonical: 'https://650vs.com/blog',
+  },
+};
 
 export default async function Blog() {
   const microCMSPosts = await getAllPosts()
@@ -9,6 +24,7 @@ export default async function Blog() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
+      <Breadcrumbs />
       
       {/* Hero Section */}
       <section className="bg-gray-900 text-white py-8">

@@ -1,12 +1,36 @@
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
+import Breadcrumbs from "../components/Breadcrumbs";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "サービス・制作実績",
+  description: "ロッコービデオサービスの映像制作サービス。企業PR動画、イベント撮影、編集、音響まで一貫対応。撮影のみ・編集のみのご依頼も承ります。茨城県・千葉県で20年の実績。",
+  keywords: ["映像制作サービス", "企業PR動画", "イベント撮影", "動画編集", "音響", "茨城県", "千葉県", "制作実績", "プロフェッショナル"],
+  openGraph: {
+    title: "サービス・制作実績 | ロッコービデオサービス",
+    description: "企業PR動画、イベント撮影、編集、音響まで一貫対応。撮影のみ・編集のみのご依頼も承ります。20年の実績で質の高い映像制作をお届け。",
+    images: [
+      {
+        url: '/services_hero.jpg',
+        width: 1920,
+        height: 1080,
+        alt: 'ロッコービデオサービス - プロフェッショナル映像制作',
+      }
+    ],
+  },
+  alternates: {
+    canonical: 'https://650vs.com/services',
+  },
+};
 
 export default function Services() {
   return (
     <>
       <div className="min-h-screen bg-white">
         <Navbar />
+        <Breadcrumbs />
 
         {/* ヒーローセクション */}
         <div className="relative w-full overflow-hidden -mb-20">

@@ -1,11 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "./components/Navbar";
+import StructuredData from "./components/StructuredData";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
+    <>
+      <StructuredData type="organization" />
+      <StructuredData type="website" />
+      <StructuredData type="localBusiness" />
+      <div className="min-h-screen bg-white">
+        <Navbar />
 
       {/* ヒーローセクション */}
       <div className="relative w-full overflow-hidden">
@@ -241,6 +246,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   );
 }

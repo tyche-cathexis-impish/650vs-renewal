@@ -1,11 +1,35 @@
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
+import Breadcrumbs from "../components/Breadcrumbs";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "会社概要・代表紹介",
+  description: "ロッコービデオサービス代表 田村秀昭のプロフィール。20年以上の映画・ドラマ制作経験を持つ編集技師・メイキングディレクター。茨城県鹿嶋市を拠点に映像制作サービスを提供。",
+  keywords: ["田村秀昭", "映像制作", "編集技師", "メイキングディレクター", "茨城県", "鹿嶋市", "映画制作", "ドラマ制作"],
+  openGraph: {
+    title: "会社概要・代表紹介 | ロッコービデオサービス",
+    description: "20年以上の映画・ドラマ制作経験を持つ代表 田村秀昭のプロフィール。編集技師・メイキングディレクターとして200人以上の俳優にインタビュー。",
+    images: [
+      {
+        url: '/Tam.jpg',
+        width: 600,
+        height: 320,
+        alt: '田村秀昭 - ロッコービデオサービス代表',
+      }
+    ],
+  },
+  alternates: {
+    canonical: 'https://650vs.com/about',
+  },
+};
 
 export default function About() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
+      <Breadcrumbs />
 
       {/* ヒーローセクション */}
       <div className="relative w-full overflow-hidden">

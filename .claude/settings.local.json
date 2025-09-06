@@ -50,7 +50,8 @@
       "Read(/C:\\Users\\tam-r\\OneDrive\\ドキュメント\\MEGA\\RVS on MEGA\\website\\650vs-renewal\\out/**)",
       "WebFetch(domain:mseeeen.msen.jp)",
       "Read(/C:\\Users\\tam-r\\OneDrive\\ドキュメント\\MEGA\\RVS on MEGA\\website\\650vs-renewal\\dist/**)",
-      "Read(//c/Users/tam-r/OneDrive/ドキュメント/MEGA/**)"
+      "Read(//c/Users/tam-r/OneDrive/ドキュメント/MEGA/**)",
+      "Bash(npm install:*)"
     ],
     "deny": [],
     "ask": [],

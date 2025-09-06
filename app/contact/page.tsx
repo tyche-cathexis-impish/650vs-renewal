@@ -1,11 +1,27 @@
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
+import Breadcrumbs from "../components/Breadcrumbs";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "お問い合わせ",
+  description: "映像制作に関するご相談・お見積りはお気軽にお問い合わせください。お問い合わせフォーム、またはLINEよりご連絡ください。茨城県・千葉県での撮影承ります。",
+  keywords: ["お問い合わせ", "映像制作相談", "見積り", "撮影依頼", "茨城県", "千葉県", "LINE相談", "映像制作会社"],
+  openGraph: {
+    title: "お問い合わせ | ロッコービデオサービス",
+    description: "映像制作に関するご相談・お見積りはお気軽にお問い合わせください。茨城県・千葉県での撮影承ります。",
+  },
+  alternates: {
+    canonical: 'https://650vs.com/contact',
+  },
+};
 
 export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
+      <Breadcrumbs />
 
       {/* Hero Section */}
       <section className="bg-gray-900 text-white py-12">
