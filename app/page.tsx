@@ -14,7 +14,7 @@ export default function Home() {
           alt="ロッコービデオサービス"
           className="w-full h-auto object-cover block"
           style={{
-            marginBottom: '-50px'
+            marginBottom: "-50px",
           }}
         />
 
@@ -43,7 +43,7 @@ export default function Home() {
           <div className="relative hidden md:block">
             <div className="h-[500px] overflow-hidden">
               <img
-                src="/sapporo.jpg"
+                src="/Sapporo.jpg"
                 alt="About us - ロッコービデオサービス"
                 className="w-full h-full object-cover"
               />

@@ -17,7 +17,7 @@ export default function About() {
             marginTop: "-30px",
             marginBottom: "-100px",
             height: "400px",
-            objectFit: "cover"
+            objectFit: "cover",
           }}
         />
         {/* 画像の上に黒フィルターを挿入して暗くする */}
@@ -83,7 +83,7 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
           <div className="h-auto md:h-80">
             <img
-              src="/R0012027.jpg"
+              src="/R0012027.JPG"
               alt="About 1"
               className="w-full h-auto md:h-full object-cover"
             />
