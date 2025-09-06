@@ -1,0 +1,7 @@
+name = "650vs-renewal"
+compatibility_date = "2025-09-06"
+
+compatibility_flags = [
+  "nodejs_compat",
+  "nodejs_compat_populate_process_env"
+]
