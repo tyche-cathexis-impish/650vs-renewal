@@ -13,6 +13,11 @@
   text-rendering: optimizeLegibility;
 }
 
+/* gray-750色の統一（ブラウザ間の差異対策） */
+.text-gray-750 {
+  color: #1f2937 !important;
+}
+
 /* ブログ記事用のスタイル（note風） */
 .prose-note {
   line-height: 1.8;
