@@ -33,7 +33,7 @@ export async function getPopularPosts(): Promise<PageViewData[]> {
     
     // 過去30日間のページビューデータを取得
     const response = await analyticsdata.properties.runReport({
-      auth,
+      auth: auth as any,
       property: `properties/${GA4_PROPERTY_ID}`,
       requestBody: {
         dateRanges: [
@@ -69,13 +69,13 @@ export async function getPopularPosts(): Promise<PageViewData[]> {
             desc: true,
           },
         ],
-        limit: 10, // 上位10件を取得
+        limit: '10', // 上位10件を取得
       },
     });
 
-    const rows = response.data.rows || [];
+    const rows = (response as any).data?.rows || [];
     
-    return rows.map(row => ({
+    return rows.map((row: any) => ({
       path: row.dimensionValues?.[0]?.value || '',
       views: parseInt(row.metricValues?.[0]?.value || '0', 10),
     }));

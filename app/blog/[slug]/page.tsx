@@ -43,7 +43,8 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
   const previousPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null
   const nextPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null
   // Get popular posts from Google Analytics
-  let popularPosts: BlogPost[] = [];
+  type LegacyPost = ReturnType<typeof convertToLegacyFormat>;
+  let popularPosts: LegacyPost[] = [];
   
   try {
     const gaData = await getPopularPosts();
@@ -57,7 +58,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
       
       popularPosts = popularSlugs
         .map(slug => allPosts.find(post => post.slug === slug))
-        .filter(post => post !== undefined);
+        .filter((post): post is LegacyPost => post !== undefined);
     }
   } catch (error) {
     console.warn('Failed to fetch GA4 data:', error);
