@@ -43,7 +43,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
   const previousPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null
   const nextPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null
   // Get popular posts from Google Analytics
-  let popularPosts = [];
+  let popularPosts: BlogPost[] = [];
   
   try {
     const gaData = await getPopularPosts();
