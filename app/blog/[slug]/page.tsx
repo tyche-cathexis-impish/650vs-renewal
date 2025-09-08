@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Navbar from '../../components/Navbar'
 import BlogImageHandler from '../../components/BlogImageHandler'
 import { notFound } from 'next/navigation'
-import { getPostById, getAllPosts, convertToLegacyFormat } from '../../lib/microcms'
+import { getPostById, getAllPosts, convertToLegacyFormat, BlogPost } from '../../lib/microcms'
 import { processLinkCards } from '../../lib/linkCardProcessor'
 import { getPopularPosts, extractBlogSlugFromPath } from '../../lib/analytics'
 
