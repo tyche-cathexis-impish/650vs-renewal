@@ -1,4 +1,6 @@
+
 import { google } from 'googleapis';
+import { JWT } from 'google-auth-library';
 
 // GA4 Property ID (環境変数から取得)
 const GA4_PROPERTY_ID = process.env.GA4_PROPERTY_ID;
@@ -11,6 +13,14 @@ const CREDENTIALS = process.env.GOOGLE_SERVICE_ACCOUNT_KEY
 interface PageViewData {
   path: string;
   views: number;
+}
+
+// Google Analytics Data APIのレスポンスの型定義
+interface RunReportResponse {
+  rows?: {
+    dimensionValues: { value: string }[];
+    metricValues: { value: string }[];
+  }[];
 }
 
 /**
@@ -28,12 +38,12 @@ export async function getPopularPosts(): Promise<PageViewData[]> {
       credentials: CREDENTIALS,
       scopes: ['https://www.googleapis.com/auth/analytics.readonly'],
     });
+    const client = await auth.getClient() as JWT;
 
-    const analyticsdata = google.analyticsdata('v1beta');
+    const analyticsdata = google.analyticsdata({ version: 'v1beta', auth: client });
     
     // 過去30日間のページビューデータを取得
     const response = await analyticsdata.properties.runReport({
-      auth: auth as any,
       property: `properties/${GA4_PROPERTY_ID}`,
       requestBody: {
         dateRanges: [
@@ -73,9 +83,10 @@ export async function getPopularPosts(): Promise<PageViewData[]> {
       },
     });
 
-    const rows = (response as any).data?.rows || [];
+    const report = response.data as RunReportResponse;
+    const rows = report.rows || [];
     
-    return rows.map((row: any) => ({
+    return rows.map((row) => ({
       path: row.dimensionValues?.[0]?.value || '',
       views: parseInt(row.metricValues?.[0]?.value || '0', 10),
     }));
