@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, Suspense } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
 
 const GA_MEASUREMENT_ID = 'G-TXKQYFJKSD'
@@ -12,12 +12,12 @@ declare global {
   }
 }
 
-export default function GoogleAnalytics() {
+function GoogleAnalyticsTracker() {
   const pathname = usePathname()
   const searchParams = useSearchParams()
 
   useEffect(() => {
-    if (!window.gtag) return
+    if (typeof window === 'undefined' || !window.gtag) return
 
     const url = pathname + (searchParams.toString() ? `?${searchParams.toString()}` : '')
     
@@ -26,6 +26,10 @@ export default function GoogleAnalytics() {
     })
   }, [pathname, searchParams])
 
+  return null
+}
+
+export default function GoogleAnalytics() {
   return (
     <>
       <script
@@ -42,6 +46,9 @@ export default function GoogleAnalytics() {
           `,
         }}
       />
+      <Suspense fallback={null}>
+        <GoogleAnalyticsTracker />
+      </Suspense>
     </>
   )
 }
