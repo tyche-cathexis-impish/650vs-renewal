@@ -9,8 +9,16 @@
 /* 太文字のフォント強化（ブラウザ間統一） */
 .font-bold, .font-semibold {
   font-weight: 700 !important;
-  color: inherit;
   text-rendering: optimizeLegibility;
+}
+
+/* 黒文字の確実な表示 */
+.text-black {
+  color: #000000 !important;
+}
+
+.text-gray-900 {
+  color: #111827 !important;
 }
 
 /* gray-750色の統一（ブラウザ間の差異対策） */
