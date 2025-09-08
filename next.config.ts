@@ -24,7 +24,6 @@ const nextConfig: NextConfig = {
   // Force single-threaded compilation
   experimental: {
     workerThreads: false,
-    optimizeCss: true,
     scrollRestoration: true,
   },
 };
