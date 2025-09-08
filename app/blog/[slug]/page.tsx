@@ -166,7 +166,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
           <h3 className="text-lg font-semibold text-gray-900 mb-6">人気の記事</h3>
           <div className="space-y-3">
             {/* Popular Post Items - Note Style */}
-            {popularPosts.map((popularPost) => (
+            {popularPosts.map((popularPost, index) => (
               <Link key={popularPost.slug} href={`/blog/${popularPost.slug}`} className="block group">
                 <div className="flex items-start space-x-3 p-2 rounded-lg hover:bg-white transition duration-200">
                   {/* Thumbnail */}
@@ -179,6 +179,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
                         height={48}
                         className="w-full h-full object-cover"
                         quality={80}
+                        priority={index === 0} // Add priority to the first image
                       />
                     ) : (
                       <div className="w-full h-full bg-gray-100 flex items-center justify-center">
