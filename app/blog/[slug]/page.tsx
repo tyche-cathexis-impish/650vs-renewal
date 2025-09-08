@@ -41,7 +41,11 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
   // - nextPost (未来の記事) = currentIndex - 1 (newer post in the array)
   const previousPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null
   const nextPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null
-  const popularPosts = allPosts.slice(0, 3) // Use first 3 posts as popular for now
+  // Get popular posts (oldest 5 posts as a simple popularity metric)
+  const popularPosts = allPosts
+    .slice() // Create a copy to avoid mutating original
+    .reverse() // Reverse to get oldest first (since allPosts is newest first)
+    .slice(0, 5) // Take first 5 (oldest posts)
 
   // Process content to convert URLs to link cards
   const processedContent = await processLinkCards(post.content)
@@ -134,7 +138,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
       {/* Popular Posts */}
       <section className="py-8 bg-gray-50">
         <div className="max-w-2xl mx-auto px-6">
-          <h3 className="text-lg font-semibold text-gray-900 mb-6">最新の記事</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-6">人気の記事</h3>
           <div className="space-y-3">
             {/* Popular Post Items - Note Style */}
             {popularPosts.map((popularPost) => (
