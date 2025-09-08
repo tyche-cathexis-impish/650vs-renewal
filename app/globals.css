@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
+/* フォントレンダリング統一設定 */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 太文字のフォント強化（ブラウザ間統一） */
+.font-bold, .font-semibold {
+  font-weight: 700 !important;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+}
+
 /* ブログ記事用のスタイル（note風） */
 .prose-note {
   line-height: 1.8;
