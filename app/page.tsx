@@ -1,7 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
 import StructuredData from "./components/StructuredData";
+
+export const metadata: Metadata = {
+  title: "ロッコービデオサービス",
+  description: "茨城県鹿行地域を拠点とする映像制作・撮影・編集のプロフェッショナル。企画から撮影、編集、音響まで一貫してサポート。20年の経験と実績で、質の高い映像制作をお届けします。",
+};
 
 export default function Home() {
   return (
