@@ -60,6 +60,9 @@ export default function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-900 hover:text-gray-600 focus:outline-none focus:text-gray-600"
+              aria-label="メニューを開く"
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
             >
               <svg
                 className="h-6 w-6"
@@ -80,7 +83,7 @@ export default function Navbar() {
 
         {/* モバイルメニュー */}
         {isOpen && (
-          <div className="md:hidden">
+          <div className="md:hidden" id="mobile-menu" role="navigation" aria-label="モバイルナビゲーション">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-100 bg-white">
               <Link
                 href="/"

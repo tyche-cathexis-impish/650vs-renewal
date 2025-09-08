@@ -23,7 +23,7 @@ export default function Home() {
         {/* 画像 */}
         <Image
           src="/bold.jpg"
-          alt="ロッコービデオサービス"
+          alt="映像制作・撮影現場での様子 - ロッコービデオサービス"
           width={1920}
           height={1080}
           className="w-full h-auto object-cover block"

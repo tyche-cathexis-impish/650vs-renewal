@@ -1,9 +1,26 @@
 @import "tailwindcss";
 
+/* Critical CSS for above-the-fold content */
+:root {
+  color-scheme: light;
+}
+
 /* フォントレンダリング統一設定 */
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Performance optimizations */
+img {
+  content-visibility: auto;
+}
+
+/* Reduce layout shifts */
+.blog-content img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 /* 太文字のフォント強化（ブラウザ間統一） */
