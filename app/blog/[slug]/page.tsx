@@ -5,6 +5,7 @@ import BlogImageHandler from '../../components/BlogImageHandler'
 import { notFound } from 'next/navigation'
 import { getPostById, getAllPosts, convertToLegacyFormat } from '../../lib/microcms'
 import { processLinkCards } from '../../lib/linkCardProcessor'
+import { getPopularPosts, extractBlogSlugFromPath } from '../../lib/analytics'
 
 // Generate static params for all blog posts
 export async function generateStaticParams() {
@@ -41,11 +42,34 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
   // - nextPost (未来の記事) = currentIndex - 1 (newer post in the array)
   const previousPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null
   const nextPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null
-  // Get popular posts (oldest 5 posts as a simple popularity metric)
-  const popularPosts = allPosts
-    .slice() // Create a copy to avoid mutating original
-    .reverse() // Reverse to get oldest first (since allPosts is newest first)
-    .slice(0, 5) // Take first 5 (oldest posts)
+  // Get popular posts from Google Analytics
+  let popularPosts = [];
+  
+  try {
+    const gaData = await getPopularPosts();
+    
+    if (gaData.length > 0) {
+      // GA4データが取得できた場合、実際のページビューデータを使用
+      const popularSlugs = gaData
+        .map(data => extractBlogSlugFromPath(data.path))
+        .filter(slug => slug !== null)
+        .slice(0, 5);
+      
+      popularPosts = popularSlugs
+        .map(slug => allPosts.find(post => post.slug === slug))
+        .filter(post => post !== undefined);
+    }
+  } catch (error) {
+    console.warn('Failed to fetch GA4 data:', error);
+  }
+  
+  // フォールバック：GA4データが取得できない場合は古い記事を表示
+  if (popularPosts.length === 0) {
+    popularPosts = allPosts
+      .slice() // Create a copy to avoid mutating original
+      .reverse() // Reverse to get oldest first (since allPosts is newest first)
+      .slice(0, 5); // Take first 5 (oldest posts)
+  }
 
   // Process content to convert URLs to link cards
   const processedContent = await processLinkCards(post.content)
