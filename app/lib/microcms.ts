@@ -123,7 +123,7 @@ export function convertToLegacyFormat(post: BlogPost) {
     }),
     category: categoryName,
     excerpt: post.content.replace(/<[^>]*>/g, '').substring(0, 150) + '...',
-    image: post.eyecatch?.url || '/images/default-blog-image.jpg',
+    image: post.eyecatch?.url || '/blog_hero.jpg',
     content: post.content,
     tags: [categoryName], // Convert category to tags array
   };

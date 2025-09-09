@@ -24,18 +24,36 @@ export default function Contact() {
       <Breadcrumbs />
 
       {/* Hero Section */}
-      <section className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl md:text-2xl text-gray-300">
+      <div className="relative w-full overflow-hidden">
+        {/* 画像 */}
+        <Image
+          src="/contact_hero.jpg"
+          alt="contact"
+          width={1920}
+          height={400}
+          className="w-full object-cover block"
+          style={{
+            height: "400px",
+            objectFit: "cover",
+          }}
+          priority
+          quality={85}
+        />
+        {/* 画像の上に黒フィルターを挿入して暗くする */}
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+
+        {/* 画像の上に重ねるテキスト */}
+        <div className="absolute inset-0 flex items-center justify-center px-8 md:px-16">
+          <div className="max-w-4xl mx-auto text-center text-white">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-md">Contact Us</h1>
+            <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md">
               映像制作に関するご相談・お見積りはお気軽に
               <br />
               お問い合わせフォーム、またはLINEよりご連絡ください
             </p>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Contact Form */}
       <section className="py-16 bg-gray-50">
@@ -229,7 +247,7 @@ export default function Contact() {
 
               <div className="mb-8">
                 <Image
-                  src="\Line_Official_QR.png"
+                  src="/Line_Official_QR.png"
                   alt="QRコード"
                   width={192}
                   height={192}
