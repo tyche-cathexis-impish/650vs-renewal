@@ -70,7 +70,7 @@ export default function Home() {
 
             {/* 右側：テキスト */}
             <div>
-              <div className="px-8 py-20">
+              <div className="px-8 py-12 md:py-20">
                 <div className="mb-6">
                   <span className="text-primary uppercase tracking-widest text-sm font-semibold">
                     ABOUT US
@@ -178,14 +178,14 @@ export default function Home() {
                 alt="Our Location"
                 width={800}
                 height={500}
-                                  className="w-full h-full object-cover md:object-center object-[center_-80px] block"
+                                  className="w-full h-full object-cover object-center block"
                 quality={80}
               />
             </div>
 
             {/* 右側：テキスト */}
             <div>
-              <div className="px-8 py-20">
+              <div className="px-8 py-12 md:py-20">
                 <div className="mb-6">
                   <span className="text-primary uppercase tracking-widest text-sm font-semibold">
                     Our Location
@@ -193,11 +193,7 @@ export default function Home() {
                 </div>
 
                 <div className="text-3xl md:text-4xl font-bold text-gray-750 mb-8 leading-tight">
-                  茨城県鹿行
-                  <span className="text-xl md:text-2xl">（ろっこう）</span>
-                  地域を拠点に
-                  <br />
-                  茨城県、千葉県で活動しています
+                  茨城県鹿行（ろっこう）地域を拠点に茨城県、千葉県で活動しています
                 </div>
 
                 <Link
