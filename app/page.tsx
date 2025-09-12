@@ -55,19 +55,17 @@ export default function Home() {
 
         {/* About Usセクション */}
         <section className="bg-white">
-          <div className="grid md:grid-cols-2 gap-0 items-center">
+          <div className="grid md:grid-cols-2 gap-0 items-stretch">
             {/* 左側：画像 - PCのみ表示 */}
             <div className="relative hidden md:block">
-              <div className="h-[500px] overflow-hidden">
-                <Image
-                  src="/Sapporo.jpg"
-                  alt="About us - ロッコービデオサービス"
-                  width={800}
-                  height={500}
-                  className="w-full h-full object-cover"
-                  quality={80}
-                />
-              </div>
+              <Image
+                src="/top_1st.jpg"
+                alt="About us - ロッコービデオサービス"
+                width={800}
+                height={500}
+                className="w-full h-full object-cover block"
+                quality={80}
+              />
             </div>
 
             {/* 右側：テキスト */}
@@ -114,7 +112,7 @@ export default function Home() {
         <section className="py-20 bg-primary">
           <div className="max-w-7xl mx-auto px-4">
             <div className="max-w-4xl mx-auto text-left">
-              {/* 左側：テキスト */}
+              {/* テキスト */}
               <div>
                 <div className="mb-6">
                   <span className="text-white uppercase tracking-widest text-sm font-semibold">
@@ -172,19 +170,17 @@ export default function Home() {
 
         {/* 地域情報セクション */}
         <section className="bg-white">
-          <div className="grid md:grid-cols-2 gap-0 items-center">
+          <div className="grid md:grid-cols-2 gap-0 items-stretch">
             {/* 左側：画像 */}
             <div className="relative">
-              <div className="h-[500px] overflow-hidden">
-                <Image
-                  src="/about02_650vs.jpg"
-                  alt="Our Location"
-                  width={800}
-                  height={500}
-                  className="w-full h-full object-cover md:object-center object-[center_-80px]"
-                  quality={80}
-                />
-              </div>
+              <Image
+                src="/top_2nd.jpg"
+                alt="Our Location"
+                width={800}
+                height={500}
+                                  className="w-full h-full object-cover md:object-center object-[center_-80px] block"
+                quality={80}
+              />
             </div>
 
             {/* 右側：テキスト */}
