@@ -67,10 +67,8 @@ export default function Contact() {
               <iframe 
                 src="https://docs.google.com/forms/d/e/1FAIpQLScdRNtW7LzPb-9-rEYdLbiH_t-r8Vaowio6MeD9XSddMpC9bg/viewform?embedded=true" 
                 width="100%" 
-                height="1933" 
-                frameBorder="0" 
-                marginHeight="0" 
-                marginWidth="0"
+                height={1933} 
+                style={{ border: 'none' }}
               >
                 読み込んでいます…
               </iframe>
