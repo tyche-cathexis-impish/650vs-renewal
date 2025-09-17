@@ -8,7 +8,10 @@ import { useState, useEffect } from "react";
 
 declare global {
   interface Window {
-    emailjs: any;
+    emailjs: {
+      init: (publicKey: string) => void;
+      send: (serviceId: string, templateId: string, templateParams: Record<string, unknown>) => Promise<unknown>;
+    };
   }
 }
 
@@ -17,7 +20,16 @@ declare global {
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState('');
-  const [submitData, setSubmitData] = useState<any>(null);
+  const [submitData, setSubmitData] = useState<{
+    name: string;
+    email: string;
+    company: string;
+    phone: string;
+    services: string;
+    budget: string;
+    deadline: string;
+    message: string;
+  } | null>(null);
 
   useEffect(() => {
     // EmailJS CDNを動的に読み込み
@@ -43,14 +55,14 @@ export default function Contact() {
     const form = e.currentTarget;
     const formData = new FormData(form);
     const templateParams = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      company: formData.get('company') || '未記入',
-      phone: formData.get('phone') || '未記入',
+      name: formData.get('name')?.toString() || '',
+      email: formData.get('email')?.toString() || '',
+      company: formData.get('company')?.toString() || '未記入',
+      phone: formData.get('phone')?.toString() || '未記入',
       services: formData.getAll('services[]').join(', ') || '未選択',
-      budget: formData.get('budget') || '未選択',
-      deadline: formData.get('deadline') || '未選択',
-      message: formData.get('message')
+      budget: formData.get('budget')?.toString() || '未選択',
+      deadline: formData.get('deadline')?.toString() || '未選択',
+      message: formData.get('message')?.toString() || ''
     };
 
     try {
