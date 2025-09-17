@@ -10,15 +10,16 @@ interface BreadcrumbItem {
 
 interface BreadcrumbsProps {
   customItems?: BreadcrumbItem[]
+  className?: string
 }
 
-export default function Breadcrumbs({ customItems }: BreadcrumbsProps) {
+export default function Breadcrumbs({ customItems, className }: BreadcrumbsProps) {
   const pathname = usePathname()
 
   // カスタムアイテムが提供されている場合は、それを使用
   if (customItems) {
     return (
-      <nav aria-label="パンくずナビゲーション" className="py-4">
+      <nav aria-label="パンくずナビゲーション" className={`py-4 ${className || ''}`}>
         <div className="max-w-7xl mx-auto px-4">
           <ol className="flex items-center space-x-2 text-sm text-gray-600">
             <li>
@@ -65,7 +66,7 @@ export default function Breadcrumbs({ customItems }: BreadcrumbsProps) {
   })
 
   return (
-    <nav aria-label="パンくずナビゲーション" className="py-4 bg-gray-50">
+    <nav aria-label="パンくずナビゲーション" className={`py-4 bg-gray-50 ${className || ''}`}>
       <div className="max-w-7xl mx-auto px-4">
         <ol className="flex items-center space-x-2 text-sm text-gray-600">
           <li>

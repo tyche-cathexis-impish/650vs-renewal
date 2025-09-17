@@ -103,7 +103,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <Breadcrumbs />
+      <Breadcrumbs className="hidden" />
 
       {/* Hero Section */}
       <div className="relative w-full overflow-hidden">

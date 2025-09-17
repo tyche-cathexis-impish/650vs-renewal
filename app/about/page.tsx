@@ -33,7 +33,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <Breadcrumbs />
+      <Breadcrumbs className="hidden" />
 
       {/* ヒーローセクション */}
       <div className="relative w-full overflow-hidden">

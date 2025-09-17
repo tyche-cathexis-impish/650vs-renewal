@@ -24,7 +24,7 @@ export default async function Blog() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <Breadcrumbs />
+      <Breadcrumbs className="hidden" />
       
       {/* Hero Section */}
       <section className="bg-gray-900 text-white py-8">
