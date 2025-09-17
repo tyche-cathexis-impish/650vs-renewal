@@ -10,7 +10,11 @@ declare global {
   interface Window {
     emailjs: {
       init: (publicKey: string) => void;
-      send: (serviceId: string, templateId: string, templateParams: Record<string, unknown>) => Promise<unknown>;
+      send: (
+        serviceId: string,
+        templateId: string,
+        templateParams: Record<string, unknown>
+      ) => Promise<unknown>;
     };
   }
 }
@@ -19,7 +23,7 @@ declare global {
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState('');
+  const [submitMessage, setSubmitMessage] = useState("");
   const [submitData, setSubmitData] = useState<{
     name: string;
     email: string;
@@ -33,11 +37,12 @@ export default function Contact() {
 
   useEffect(() => {
     // EmailJS CDNを動的に読み込み
-    const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
+    const script = document.createElement("script");
+    script.src =
+      "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js";
     script.onload = () => {
       if (window.emailjs) {
-        window.emailjs.init('JNPTEfbn-dArUcevm');
+        window.emailjs.init("JNPTEfbn-dArUcevm");
       }
     };
     document.head.appendChild(script);
@@ -50,38 +55,46 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setSubmitMessage('');
+    setSubmitMessage("");
 
     const form = e.currentTarget;
     const formData = new FormData(form);
     const templateParams = {
-      name: formData.get('name')?.toString() || '',
-      email: formData.get('email')?.toString() || '',
-      company: formData.get('company')?.toString() || '未記入',
-      phone: formData.get('phone')?.toString() || '未記入',
-      services: formData.getAll('services[]').join(', ') || '未選択',
-      budget: formData.get('budget')?.toString() || '未選択',
-      deadline: formData.get('deadline')?.toString() || '未選択',
-      message: formData.get('message')?.toString() || ''
+      name: formData.get("name")?.toString() || "",
+      email: formData.get("email")?.toString() || "",
+      company: formData.get("company")?.toString() || "未記入",
+      phone: formData.get("phone")?.toString() || "未記入",
+      services: formData.getAll("services[]").join(", ") || "未選択",
+      budget: formData.get("budget")?.toString() || "未選択",
+      deadline: formData.get("deadline")?.toString() || "未選択",
+      message: formData.get("message")?.toString() || "",
     };
 
     try {
       // 自分宛てメール送信
-      await window.emailjs.send('service_uuz9e5e', 'template_ixcmwdn', templateParams);
+      await window.emailjs.send(
+        "service_uuz9e5e",
+        "template_ixcmwdn",
+        templateParams
+      );
 
       // お客様宛て自動返信メール送信
-      await window.emailjs.send('service_uuz9e5e', 'template_azdpbmd', templateParams);
+      await window.emailjs.send(
+        "service_uuz9e5e",
+        "template_azdpbmd",
+        templateParams
+      );
 
-      setSubmitMessage('success');
+      setSubmitMessage("success");
       setSubmitData(templateParams);
 
       // フォームリセット（安全にチェック）
-      if (form && typeof form.reset === 'function') {
+      if (form && typeof form.reset === "function") {
         form.reset();
       }
     } catch (error) {
-      setSubmitMessage('error');
-      console.error('送信エラー:', error);
+      setSubmitMessage("error");
+      console.error("送信エラー:", error);
     } finally {
       setIsSubmitting(false);
     }
@@ -113,14 +126,64 @@ export default function Contact() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-md">
               Contact Us
             </h1>
-            <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md">
+          </div>
+        </div>
+      </div>
+
+      {/* Index Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-xl md:text-2xl text-gray-700 mb-8">
               映像制作に関するご相談・お見積りはお気軽に
               <br />
               お問い合わせフォーム、またはLINEよりご連絡ください
             </p>
+
+            <div className="flex flex-col gap-4 justify-center items-center">
+              <a
+                href="#line-contact"
+                className="text-gray-800 font-semibold hover:text-blue-600 transition duration-300 inline-flex items-center"
+              >
+                LINEで問い合わせる
+                <svg
+                  className="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+              </a>
+
+              <a
+                href="#faq"
+                className="text-gray-800 font-semibold hover:text-blue-600 transition duration-300 inline-flex items-center"
+              >
+                「よくあるご質問」を見る
+                <svg
+                  className="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Google Form Section */}
       <section className="py-16 bg-gray-50">
@@ -137,10 +200,12 @@ export default function Contact() {
             <div className="bg-white rounded-lg shadow-sm p-8">
               {/* EmailJS フォーム */}
               <form onSubmit={handleSubmit} className="space-y-6">
-
                 {/* メールアドレス */}
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     メールアドレス <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -154,7 +219,10 @@ export default function Contact() {
 
                 {/* お名前 */}
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     お名前 <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -168,7 +236,10 @@ export default function Contact() {
 
                 {/* 会社名・団体名 */}
                 <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="company"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     会社名・団体名
                   </label>
                   <input
@@ -181,7 +252,10 @@ export default function Contact() {
 
                 {/* 電話番号 */}
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     電話番号（ハイフンを入れてください）
                   </label>
                   <input
@@ -200,27 +274,57 @@ export default function Contact() {
                   </label>
                   <div className="space-y-2">
                     <label className="flex items-center">
-                      <input type="checkbox" name="services[]" value="企業プロモーション映像" className="mr-2" />
+                      <input
+                        type="checkbox"
+                        name="services[]"
+                        value="企業プロモーション映像"
+                        className="mr-2"
+                      />
                       企業プロモーション映像
                     </label>
                     <label className="flex items-center">
-                      <input type="checkbox" name="services[]" value="イベント撮影・記録" className="mr-2" />
+                      <input
+                        type="checkbox"
+                        name="services[]"
+                        value="イベント撮影・記録"
+                        className="mr-2"
+                      />
                       イベント撮影・記録
                     </label>
                     <label className="flex items-center">
-                      <input type="checkbox" name="services[]" value="セミナー・イベントなど配信" className="mr-2" />
+                      <input
+                        type="checkbox"
+                        name="services[]"
+                        value="セミナー・イベントなど配信"
+                        className="mr-2"
+                      />
                       セミナー・イベントなど配信
                     </label>
                     <label className="flex items-center">
-                      <input type="checkbox" name="services[]" value="ブライダル撮影" className="mr-2" />
+                      <input
+                        type="checkbox"
+                        name="services[]"
+                        value="ブライダル撮影"
+                        className="mr-2"
+                      />
                       ブライダル撮影
                     </label>
                     <label className="flex items-center">
-                      <input type="checkbox" name="services[]" value="広告・CM映像制作" className="mr-2" />
+                      <input
+                        type="checkbox"
+                        name="services[]"
+                        value="広告・CM映像制作"
+                        className="mr-2"
+                      />
                       広告・CM映像制作
                     </label>
                     <label className="flex items-center">
-                      <input type="checkbox" name="services[]" value="その他" className="mr-2" />
+                      <input
+                        type="checkbox"
+                        name="services[]"
+                        value="その他"
+                        className="mr-2"
+                      />
                       その他
                     </label>
                   </div>
@@ -228,7 +332,10 @@ export default function Contact() {
 
                 {/* 予算 */}
                 <div>
-                  <label htmlFor="budget" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="budget"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     予算
                   </label>
                   <select
@@ -248,7 +355,10 @@ export default function Contact() {
 
                 {/* 希望納期 */}
                 <div>
-                  <label htmlFor="deadline" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="deadline"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     希望納期
                   </label>
                   <select
@@ -259,14 +369,19 @@ export default function Contact() {
                     <option value="">選択してください</option>
                     <option value="急ぎ（1か月以内）">急ぎ（1か月以内）</option>
                     <option value="通常（3か月程度）">通常（3か月程度）</option>
-                    <option value="余裕あり（3か月以上先）">余裕あり（3か月以上先）</option>
+                    <option value="余裕あり（3か月以上先）">
+                      余裕あり（3か月以上先）
+                    </option>
                     <option value="要相談">要相談</option>
                   </select>
                 </div>
 
                 {/* お問い合わせ内容 */}
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     お問い合わせ内容 <span className="text-red-500">*</span>
                   </label>
                   <textarea
@@ -285,38 +400,58 @@ export default function Contact() {
                     disabled={isSubmitting}
                     className="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition duration-300 font-medium disabled:bg-gray-400"
                   >
-                    {isSubmitting ? '送信中...' : '送信する'}
+                    {isSubmitting ? "送信中..." : "送信する"}
                   </button>
                 </div>
               </form>
 
               {/* 送信結果メッセージ */}
-              {submitMessage === 'success' && submitData && (
+              {submitMessage === "success" && submitData && (
                 <div className="mt-4 p-4 rounded-md text-center bg-gray-100 text-gray-800">
                   <h3 className="font-bold mb-2">送信完了</h3>
-                  <p className="mb-4">お問い合わせありがとうございます。以下の内容で承りました。</p>
+                  <p className="mb-4">
+                    お問い合わせありがとうございます。以下の内容で承りました。
+                  </p>
                   <div className="text-left bg-white p-4 rounded border text-sm">
-                    <p><strong>お名前:</strong> {submitData.name}</p>
-                    <p><strong>メールアドレス:</strong> {submitData.email}</p>
-                    <p><strong>会社名・団体名:</strong> {submitData.company}</p>
-                    <p><strong>電話番号:</strong> {submitData.phone}</p>
-                    <p><strong>ご希望のサービス:</strong> {submitData.services}</p>
-                    <p><strong>予算:</strong> {submitData.budget}</p>
-                    <p><strong>希望納期:</strong> {submitData.deadline}</p>
-                    <p><strong>お問い合わせ内容:</strong><br />{submitData.message}</p>
+                    <p>
+                      <strong>お名前:</strong> {submitData.name}
+                    </p>
+                    <p>
+                      <strong>メールアドレス:</strong> {submitData.email}
+                    </p>
+                    <p>
+                      <strong>会社名・団体名:</strong> {submitData.company}
+                    </p>
+                    <p>
+                      <strong>電話番号:</strong> {submitData.phone}
+                    </p>
+                    <p>
+                      <strong>ご希望のサービス:</strong> {submitData.services}
+                    </p>
+                    <p>
+                      <strong>予算:</strong> {submitData.budget}
+                    </p>
+                    <p>
+                      <strong>希望納期:</strong> {submitData.deadline}
+                    </p>
+                    <p>
+                      <strong>お問い合わせ内容:</strong>
+                      <br />
+                      {submitData.message}
+                    </p>
                   </div>
                   <p className="mt-4">確認メールをお送りしました。</p>
                 </div>
               )}
 
-              {submitMessage === 'error' && (
+              {submitMessage === "error" && (
                 <div className="mt-4 p-4 rounded-md text-center bg-red-100 text-red-800">
                   <h3 className="font-bold mb-2">送信エラー</h3>
-                  <p>申し訳ございませんが、送信に失敗しました。しばらく時間をおいて再度お試しください。</p>
+                  <p>
+                    申し訳ございませんが、送信に失敗しました。しばらく時間をおいて再度お試しください。
+                  </p>
                 </div>
               )}
-
-
             </div>
 
             <p className="text-center text-sm text-gray-500 mt-4">
@@ -327,7 +462,7 @@ export default function Contact() {
       </section>
 
       {/* LINE Contact System */}
-      <section className="py-16">
+      <section id="line-contact" className="py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-lg mx-auto text-center">
             <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-2xl p-12 text-white">
@@ -358,7 +493,7 @@ export default function Contact() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16">
+      <section id="faq" className="py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
