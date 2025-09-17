@@ -25,7 +25,6 @@ export default function Contact() {
 
       {/* Hero Section */}
       <div className="relative w-full overflow-hidden">
-        {/* 画像 */}
         <Image
           src="/contact_hero.jpg"
           alt="contact"
@@ -39,10 +38,7 @@ export default function Contact() {
           priority
           quality={85}
         />
-        {/* 画像の上に黒フィルターを挿入して暗くする */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
-
-        {/* 画像の上に重ねるテキスト */}
         <div className="absolute inset-0 flex items-center justify-center px-8 md:px-16">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-md">Contact Us</h1>
@@ -55,7 +51,7 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* Contact Form */}
+      {/* Google Form Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
@@ -64,173 +60,20 @@ export default function Contact() {
                 お問い合わせフォーム
               </h2>
               <p className="text-gray-600">
-                　　<span className="text-red-500">＊</span>は必須項目です。
+                以下のフォームに必要事項をご記入の上、送信してください。
               </p>
             </div>
-
-            <div className="bg-white rounded-lg shadow-sm p-8">
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label
-                      htmlFor="name"
-                      className="block text-sm font-bold text-gray-900 mb-2"
-                    >
-                      お名前 <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="鹿行太郎"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="company"
-                      className="block text-sm font-bold text-gray-900 mb-2"
-                    >
-                      会社名・団体名
-                    </label>
-                    <input
-                      type="text"
-                      id="company"
-                      name="company"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="株式会社○○"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-bold text-gray-900 mb-2"
-                    >
-                      メールアドレス <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="example@email.com"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="phone"
-                      className="block text-sm font-bold text-gray-900 mb-2"
-                    >
-                      電話番号
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="029-XXX-XXXX"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="service"
-                    className="block text-sm font-bold text-gray-900 mb-2"
-                  >
-                    ご希望のサービス <span className="text-red-500">*</span>
-                  </label>
-                  <select
-                    id="service"
-                    name="service"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  >
-                    <option value="">選択してください</option>
-                    <option value="corporate">企業プロモーション映像</option>
-                    <option value="event">イベント撮影・記録</option>
-                    <option value="event">セミナー・イベントなど配信</option>
-                    <option value="wedding">ウェディング映像制作</option>
-                    <option value="commercial">CM・広告映像制作</option>
-                    <option value="other">その他・相談</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="budget"
-                    className="block text-sm font-bold text-gray-900 mb-2"
-                  >
-                    予算
-                  </label>
-                  <select
-                    id="budget"
-                    name="budget"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  >
-                    <option value="">選択してください</option>
-                    <option value="under50">〜50万円</option>
-                    <option value="50-100">50〜100万円</option>
-                    <option value="100-300">100〜300万円</option>
-                    <option value="300-500">300〜500万円</option>
-                    <option value="over500">500万円〜</option>
-                    <option value="consulting">要相談</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="timeline"
-                    className="block text-sm font-bold text-gray-900 mb-2"
-                  >
-                    希望納期
-                  </label>
-                  <select
-                    id="timeline"
-                    name="timeline"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  >
-                    <option value="">選択してください</option>
-                    <option value="urgent">急ぎ（1ヶ月以内）</option>
-                    <option value="normal">通常（1〜3ヶ月）</option>
-                    <option value="flexible">余裕あり（3ヶ月以上）</option>
-                    <option value="undecided">未定・相談</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-bold text-gray-900 mb-2"
-                  >
-                    メッセージ・詳細 <span className="text-red-500">*</span>
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    rows={6}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    placeholder="プロジェクトの詳細、ご要望、ご質問などをお聞かせください。"
-                  ></textarea>
-                </div>
-
-                <div className="text-center">
-                  <button
-                    type="submit"
-                    className="bg-primary-purple text-white px-12 py-4 rounded-lg hover:bg-blue-700 transition duration-300 text-lg font-semibold"
-                  >
-                    送信する
-                  </button>
-                </div>
-              </form>
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+              <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLScdRNtW7LzPb-9-rEYdLbiH_t-r8Vaowio6MeD9XSddMpC9bg/viewform?embedded=true" 
+                width="100%" 
+                height="1933" 
+                frameBorder="0" 
+                marginHeight="0" 
+                marginWidth="0"
+              >
+                読み込んでいます…
+              </iframe>
             </div>
           </div>
         </div>
