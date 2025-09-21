@@ -24,7 +24,8 @@ img {
 }
 
 /* 太文字のフォント強化（ブラウザ間統一） */
-.font-bold, .font-semibold {
+.font-bold,
+.font-semibold {
   font-weight: 700 !important;
   text-rendering: optimizeLegibility;
 }
@@ -141,7 +142,9 @@ img {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .prose-note img:hover {
@@ -517,6 +520,7 @@ img {
     font-size: 14px !important;
     line-height: 1.4 !important;
     -webkit-line-clamp: 3 !important;
+    line-clamp: 3 !important;
     display: -webkit-box !important;
     -webkit-box-orient: vertical !important;
     overflow: hidden !important;
@@ -549,25 +553,12 @@ img {
   --primary-hover: #2cc8d3;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
-    Arial, "Noto Sans JP", Meiryo, sans-serif;
+  font-family:
+    "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Arial,
+    "Noto Sans JP", Meiryo, sans-serif;
   line-height: 1.6;
   font-feature-settings: "palt" 1;
   letter-spacing: 0.02em;

@@ -230,10 +230,3 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
   )
 }
 
-// Temporarily disable static generation to fix Jest worker error
-// export async function generateStaticParams() {
-//   const posts = await getAllPosts()
-//   return posts.map((post) => ({
-//     slug: post.id,
-//   }))
-// }

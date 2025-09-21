@@ -59,7 +59,7 @@ export default function Home() {
             {/* 左側：画像 - PCのみ表示 */}
             <div className="relative hidden md:block">
               <Image
-                src="/top_1st.jpg"
+                src="/Sapporo.jpg"
                 alt="About us - ロッコービデオサービス"
                 width={800}
                 height={500}
@@ -103,6 +103,18 @@ export default function Home() {
                     />
                   </svg>
                 </Link>
+              </div>
+
+              {/* モバイル用画像 - テキストの下に表示 */}
+              <div className="relative md:hidden">
+                <Image
+                  src="/Sapporo.jpg"
+                  alt="About us - ロッコービデオサービス"
+                  width={800}
+                  height={500}
+                  className="w-full h-auto object-cover block"
+                  quality={80}
+                />
               </div>
             </div>
           </div>
@@ -174,11 +186,11 @@ export default function Home() {
             {/* 左側：画像 */}
             <div className="relative">
               <Image
-                src="/top_2nd.jpg"
+                src="/about02_650vs.jpg"
                 alt="Our Location"
                 width={800}
                 height={500}
-                                  className="w-full h-full object-cover object-center block"
+                className="w-full h-full object-cover object-center block"
                 quality={80}
               />
             </div>
